@@ -31,13 +31,13 @@
   <!-- responsive style -->
   <link href="css-SYSTEM/responsive.css" rel="stylesheet" />
 <meta http-equiv="refresh" content="40;url=http://192.168.88.203/dashboard/"/>  
+
+
+</head>
 <audio autoplay>
     
 <source src="LOGIN-SYSTEM.mp3" type="audio/mpeg">
     </audio>
-
-</head>
-
 <body>
 
   <div class="hero_area">
