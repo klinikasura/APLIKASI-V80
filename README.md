@@ -23,21 +23,23 @@ DEVELOPMENT IT DESAIN HAMBA ALLOH.
 - Pembaharuan Jaringan Internet (01112024-0800)
 
 
-  --------------------------------------------------- APLIKASI AI ROBOT SYSTEM V.80 ----------------------------------------
+  ---------------------------- APLIKASI AI ROBOT SYSTEM V.80 -----------------------
 
   UPDATE VERSI 8.0 RILIS (01112024-0800) LINK https://github.com/klinikasura/APLIKASI-V80/releases/
 
-  --------------------------------------------------------------------------------------------------------------------------
+  ----------------------------------------------------------------------------------
 
   RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 LINK https://klinikasura.github.io/APLIKASI-V80/
 
-  ----------------------------------------------------------------------------------- --------------------------------------
+  -----------------------------------------------------------------------------------
 
-![Cuplikan layar dari 2024-11-27 11-12-49](https://github.com/user-attachments/assets/608bcddc-ae4b-4033-bb8f-c51950cb20b1)
-![Cuplikan layar dari 2024-11-27 11-13-46](https://github.com/user-attachments/assets/0ff2938b-16a1-4936-87eb-260ae0320c1b)
+  ![Cuplikan layar dari 2024-11-27 11-12-49](https://github.com/user-attachments/assets/608bcddc-ae4b-4033-bb8f-c51950cb20b1)
+  ![Cuplikan layar dari 2024-11-27 11-13-46](https://github.com/user-attachments/assets/0ff2938b-16a1-4936-87eb-260ae0320c1b)
 
-----------------------------------------------------------------------------------------------------------------------------PROGRAM APLIKASI AI ROBOT SYSTEM V.80 INI HANYA DI PERUNTUKAN DI RS KAMI TIDAK DI PUBLIKASI.
-JARINGAN GITHUB INI DI BUAT UNTUK PENGHUBUNG APLIKASI AI ROBOT SYSTEM V.80 SEBAGAI API (Application Programming Interface).
+  -----------------------------------------------------------------------------------
 
-TERIMA KASIH.
+ PROGRAM APLIKASI AI ROBOT SYSTEM V.80 INI HANYA DI PERUNTUKAN DI RS KAMI TIDAK DI PUBLIKASI.
+ JARINGAN GITHUB INI DI BUAT UNTUK PENGHUBUNG APLIKASI AI ROBOT SYSTEM V.80 SEBAGAI API (Application Programming Interface).
+
+ TERIMA KASIH.
 
