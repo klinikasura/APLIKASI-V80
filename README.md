@@ -4,7 +4,7 @@ APLIKASI AI ROBOT SYSTEM V.80
 DEVELOPMENT IT DESAIN HAMBA ALLOH.
 
 
---------------------------------------------------- RINCIAN PEMBAHARUAN ---------------------------------------------------
+  ---------------------------- RINCIAN PEMBAHARUAN -----------------------------
 
 - Pembaharuan Coding (01112024-0800)
 
@@ -23,7 +23,7 @@ DEVELOPMENT IT DESAIN HAMBA ALLOH.
 - Pembaharuan Jaringan Internet (01112024-0800)
 
 
-  ---------------------------- APLIKASI AI ROBOT SYSTEM V.80 -----------------------
+  ---------------------------- APLIKASI AI ROBOT SYSTEM V.80 ---------------------
 
   UPDATE VERSI 8.0 RILIS (01112024-0800) LINK https://github.com/klinikasura/APLIKASI-V80/releases/
 
