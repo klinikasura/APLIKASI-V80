@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Aplikasi RS. Asura</title>
+
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors-V80/feather/feather.css">
+  <link rel="stylesheet" href="vendors-V80/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors-V80/css/vendor.bundle.base.css">
+ <link rel="stylesheet" href="assets-V80/css/vendor.css">
+    <link rel="stylesheet" href="assets-V80/css/style.css">
+    <link rel="stylesheet" href="assets-V80/css/responsive.css">
+
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors-V80/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors-V80/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js-V80/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css-V80/vertical-layout-light/style.css">
+	  <link href="ICON-V80/download.jpeg" rel="icon" type="image/png" />
+<meta http-equiv="refresh" content="100;url=index.html"/>  
+
+
+
+
+
+
+
+
+
+
+<audio autoplay>
+    <source src="AUDIO1.mp3" type="audio/mpeg">
+    </audio>
+
+  <!-- endinject -->
+
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="ICON-V80/download.jpeg" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="ICON-V80/download.jpeg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class=""></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Update 01112024-0800" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+           
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="">
+                  <div class="preview-icon bg-success">
+                    <i class=""></i>
+                  </div>
+                </div>
+                
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                  
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+           
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+               
+              <a class="dropdown-item">
+                
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">Warna Aplikasi</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>PUTIH</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>HITAM</div>
+          <p class="settings-heading mt-2">Warna Backround</p>
+          <div class="color-tiles mx-0 px-4">
+                     <div class="tiles danger">MERAH</div>
+            <div class="tiles info">BIRU</div>
+            <div class="tiles dark">HITAM</div>
+            <div class="tiles default"> PUTIH</div>
+          </div>
+        </div>
+      </div>
+      <div id="" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="" id="">
+          <li class="">
+          
+          </li>
+          <li class="">
+           
+        </ul>
+        <div class="" id="">
+          <div class="" id="" >
+            <div class="">
+             
+                <div class="">
+                  
+                </div>
+            
+            </div>
+            <div class="">
+             
+                  <div class="">
+               
+                     
+                  </div>
+                  <i class=""></i>
+                </li>
+                <li class="">
+                  <div class="">
+                 
+                   
+               
+              
+                  </div>
+                  <i class=""></i>
+                </li>
+                <li class="">
+                  <div class="">
+                 
+                
+                    
+               
+                  </div>
+                  <i class=""></i>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="">
+              <div class="">
+                <i class=""></i>
+               
+              </div>
+             
+            </div>
+            <div >
+              <div
+                <i class=""></i>
+     
+              </div>
+       
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="" id="" >
+            <div class="">
+             
+            </div>
+            
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      
+
+
+      <!-- partial -->
+
+     <center> <div class="main-panel">
+        <div class="ba-add-balance-inner mg-top-40">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">SUPER HERO</h3>
+                  <h6 class="font-weight-normal mb-0">V.80 <span class="text-primary"></span></h6>
+                </div>
+
+
+
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+
+<rsura/APLIKASI-V80/releases/" Target="_blank"<>  <a href="index2.html" ></a>
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+               
+                   
+
+
+
+	<!-- Menampilkan Jam (Aktif) -->
+	<right><div id="clock"></div>
+		<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 24) {
+		        a_p = "";
+		    } else {
+		        a_p = "";
+		    }
+		    if (curr_hour == 0) {
+		        curr_hour = 24;
+		    }
+		    if (curr_hour > 24) {
+		        curr_hour = curr_hour - 24;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+
+		function checkTime(i) {
+		    if (i < 10) {
+
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->
+		</script>
+
+		<!-- Menampilkan Hari, Bulan dan Tahun -->
+		
+		<script type='text/javascript'>
+			<!--
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			//-->
+		</script>
+
+      
+      
+
+
+
+<p>
+
+
+
+
+
+
+<a href="https://api.whatsapp.com/send?phone=6281271138811">
+<img src="https://hantamo.com/free/whatsapp.svg" class="wabutton" alt="WhatsApp-Button" />
+</a>
+<style>
+.wabutton{
+width:40px;
+height:40px;
+position:fixed;
+bottom:100px;
+right:40px;
+z-index:10000;
+}
+</style>
+
+
+
+
+
+
+                    </button>
+                   
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card tale-bg">
+                <div class="">
+                  <img src="ICON-V80/ROBOT-VERSI-80.gif" alt="people">
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i><sup></sup></h2>
+                      </div>
+                      <div class="ml-2">
+
+                        <h4 class="location font-weight-normal">AI Robot System</h4>
+                        <h6 class="font-weight-normal">(Development)</h6>
+<left> <a href="index2.html" class="btn btn-info" >MENU LAINNYA</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 grid-margin transparent">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      <p class="mb-4" style="color:WHITE" >KARYAWAN</p>
+<img src="ICON-V80/MEDIS.png" alt="people"><p>
+                 <center> <a href="http://192.168.88.203/dashboard/" class="btn btn-info" >LOGIN</a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                   <p class="mb-4" style="color:WHITE" >DOKTER</p>
+<img src="ICON-V80/DOKTER.png" alt="people"><p>
+                      <center> <a href="http://192.168.88.203/dashboard/MASTER-APLIKASI/E-DOKTER/E-DOKTER-V2/login.php" class="btn btn-info" >LOGIN</a>
+                    </div>
+                  </div>
+                </div>
+    </div>    
+              </div>
+             
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        
+    
+    <!-- Footer Area -->
+    
+            <h1><div class="footer-bottom text-center">
+                <ul>
+                    <li>
+                        <a href="index.html">
+<img border="0" src="ICON-V80/BERANDA.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Beranda</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/APLIKASI.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Aplikasi</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/UPLOAD.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Upload</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/POLIKLINIK.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Poliklinik</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/LOGIN.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Login</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+
+    <div class="ba-add-balance-inner mg-top-40" style="background-image: url(#);">
+          <div class="container">
+            <div class="section-title">
+                <a class="title" href="">Postingan Terbaru</h3>
+                <a href=""></a>
+            </div>
+            <div class="blog-slider owl-carousel">
+                <div class="item">
+                    <div class="single-blog">
+                        <div class="thumb">
+                 <iframe src="https://snapwidget.com/embed/1081534" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:400px; height:190px" title="Klinik Asura"></iframe>
+                        </div>
+                        <div class="details">
+                            <center><a href="blog-details.html"></a>Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-blog">
+                        <div class="thumb">
+                      <iframe src="https://snapwidget.com/embed/1081534" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:400px; height:190px" title="Klinik Asura"></iframe>
+                        </div>
+                        <div class="details">
+                             <center>  <a href="blog-details.html"></a>Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog-area End -->
+
+
+
+
+
+
+
+
+
+    
+    <!-- blog-area start -->
+    <div class="blog-area pd-top-36 pb-2 mg-top-40" style="background-image: url(#);">
+        <div class="container">
+            <div class="section-title">
+               <a class="title" href="">SUPER HERO #AIwayswithYou</h3>
+                <a href="#"></a>
+            </div>
+            <div class="blog-slider owl-carousel">
+                <div class="item">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img src="SISDMK-VERSI80.gif" alt="img">
+                        </div>
+                        <div class="details">
+                           <center> <a href="https://sisdmk.kemkes.go.id/login">SISDMK</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <img src="DOKUMEN-VERSI80.gif" alt="img">
+                        </div>
+                        <div class="details">
+                             <center>  <a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/login-github-sikrs.html">SIKRS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog-area End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer-area">
+        <div class="footer-top text-center" style="background-image: url();">
+            <div class="container">
+                
+            </div>
+        </div>
+
+
+
+
+   
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors-V80/chart.js/Chart.min.js"></script>
+  <script src="vendors-V80/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors-V80/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js-V80/dataTables.select.min.js"></script>
+ <script src="assets-V80/js/vendor.js"></script>
+    <script src="assets-V80/js/main.js"></script>
+
+
+
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js-V80/off-canvas.js"></script>
+  <script src="js-V80/hoverable-collapse.js"></script>
+  <script src="js-V80/template.js"></script>
+  <script src="js-V80/settings.js"></script>
+  <script src="js-V80/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js-V80/dashboard.js"></script>
+  <script src="js-V80/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
