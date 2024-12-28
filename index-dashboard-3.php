@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Aplikasi RS. Asura</title>
+
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors-V80/feather/feather.css">
+  <link rel="stylesheet" href="vendors-V80/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors-V80/css/vendor.bundle.base.css">
+ <link rel="stylesheet" href="assets-V80/css/vendor.css">
+    <link rel="stylesheet" href="assets-V80/css/style.css">
+    <link rel="stylesheet" href="assets-V80/css/responsive.css">
+
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors-V80/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors-V80/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js-V80/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css-V80/vertical-layout-light/style.css">
+	  <link href="ICON-V80/download.jpeg" rel="icon" type="image/png" />
+<meta http-equiv="refresh" content="10000000000000000000000000000000000000000000000000000000;url=https://klinikasura.github.io/APLIKASI-V80/"/>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- endinject -->
+
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href=""><img src="ICON-V80/download.jpeg" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href=""><img src="ICON-V80/download.jpeg" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class=""></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Update 01112024-0800" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+           
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="">
+                  <div class="preview-icon bg-success">
+                    <i class=""></i>
+                  </div>
+                </div>
+                
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                  
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+           
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+               
+              <a class="dropdown-item">
+                
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">Warna Aplikasi</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>PUTIH</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>HITAM</div>
+          <p class="settings-heading mt-2">Warna Backround</p>
+          <div class="color-tiles mx-0 px-4">
+                     <div class="tiles danger">MERAH</div>
+            <div class="tiles info">BIRU</div>
+            <div class="tiles dark">HITAM</div>
+            <div class="tiles default"> PUTIH</div>
+          </div>
+        </div>
+      </div>
+      <div id="" class="settings-panel">
+        <i class="settings-close ti-close"></i>
+        <ul class="" id="">
+          <li class="">
+          
+          </li>
+          <li class="">
+           
+        </ul>
+        <div class="" id="">
+          <div class="" id="" >
+            <div class="">
+             
+                <div class="">
+                  
+                </div>
+            
+            </div>
+            <div class="">
+             
+                  <div class="">
+               
+                     
+                  </div>
+                  <i class=""></i>
+                </li>
+                <li class="">
+                  <div class="">
+                 
+                   
+               
+              
+                  </div>
+                  <i class=""></i>
+                </li>
+                <li class="">
+                  <div class="">
+                 
+                
+                    
+               
+                  </div>
+                  <i class=""></i>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="">
+              <div class="">
+                <i class=""></i>
+               
+              </div>
+             
+            </div>
+            <div >
+              <div
+                <i class=""></i>
+     
+              </div>
+       
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="" id="" >
+            <div class="">
+             
+            </div>
+            
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      
+
+	
+
+
+
+
+
+
+      <!-- partial -->
+
+ 
+
+     
+
+
+
+
+
+
+                  
+                  <table width="340">
+                    <tr>
+                     
+                     
+                      <td colspan="4" bgcolor="#CCCCCC"><strong>Transfer</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><div align="center">
+                        <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/TOPUP.png" width="52" height="57" border="0"></a></p>
+                        <p>Top-Up</p>
+                      </div></td>
+                      <td><div align="center">
+                        <div align="center">
+                          <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/TRANSFER.png" width="52" height="57" border="0"></a></p>
+                          <p>Transfer</p>
+                        </div>
+                        </div></td>
+                      <td><div align="center">
+                        <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/GOPAY.png" width="52" height="57" border="0"></a></p>
+                        <p>GoPay</p>
+                      </div></td>
+                      <td><div align="center">
+                        <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/DANA.png" width="52" height="57" border="0"></a></p>
+                        <p>DANA</p>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" bgcolor="#CCCCCC"><strong>Pembelian</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><div align="center">
+                        <p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/e-wallet2.php"><img src="GAMBAR/EWALLET.png" width="52" height="57" border="0"></a></p>
+                        <p align="center">E-Wallet</p>
+                        </div></td>
+                      <td><div align="center">
+                        <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/VOUCHER.png" width="52" height="57" border="0"></a></p>
+                        <p>Voucher</p>
+                      </div></td>
+                      <td><div align="center">
+                        <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/PAKETDATA.png" width="52" height="57" border="0"></a></p>
+                        <p>Paket Data </p>
+                      </div></td>
+                      <td><div align="center">
+                        <p><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/PLN.png" width="52" height="57" border="0"></a></p>
+                        <p>Token PLN </p>
+                      </div></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" bgcolor="#CCCCCC"><strong>Pembayaran</strong></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                      <p align="center"><a href="https://djponline.pajak.go.id/account/login"><img src="GAMBAR/PAJAK.png" width="52" height="57" border="0"></a></p>                        <p align="center">Pajak</p></td>
+                      <td>
+                      <p align="center"><a href="https://esppt.kaboki.go.id/"><img src="GAMBAR/PBB.png" width="52" height="57" border="0"></p>                        <p align="center">PBB</p></td>
+                      <td>
+                        <p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/kode2.php"><img src="GAMBAR/PEMBAYARAN.png" width="52" height="57" border="0"></a></p>                        <p align="center">VA</p></td>
+                      <td>
+                        <p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/index-tagihan2.php"><img src="GAMBAR/PEMBELIAN.png" width="52" height="57" border="0"></a></p>                        <p align="center">Tagihan</p></td>
+                    </tr>
+                    <tr>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/SELULER.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">Seluler</p></td>
+                      <td>
+                      <p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/EMONEY.png" width="52" height="57" border="0"></a></p>                        <p align="center">E-Money</p></td>
+                      <td>
+                      <p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/TAP.png" width="52" height="57" border="0"></a></p>                        <p align="center">TapCash</p></td>
+                      <td>
+                      <p align="center"><a href="https://www.traveloka.com/id-id/tiket-pesawat"><img src="GAMBAR/TIKET.png" width="52" height="57" border="0"></a></p>                        <p align="center">Tiket</p></td>
+                    </tr>
+                    <tr>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/BPJS.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">BPJS</p></td>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/PDAM.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">PDAM</p></td>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/TOKOPEDIA.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">Tokopedia</p></td>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/SHOPEE.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">Shopee</p></td>
+                    </tr>
+                    <tr>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/SAMSAT.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">Samsat</p></td>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/PENDIDIKAN.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">Pendidikan</p></td>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/SMARTTV.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">SmartTV</p></td>
+                      <td><p align="center"><a href="https://ib.bri.co.id/ib-bri/"><img src="GAMBAR/PGN.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">Gas &amp; PGN </p></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                     
+                </table>
+                  <p>&nbsp;</p>
+                  <p class="font-weight-normal mb-0">&nbsp;</p>
+                </div>
+
+
+
+                
+
+
+
+
+
+
+
+
+
+<a href="https://api.whatsapp.com/send?phone=6281271138811">
+<img src="https://hantamo.com/free/whatsapp.svg" class="wabutton" alt="WhatsApp-Button" />
+</a>
+<style>
+.wabutton{
+width:40px;
+height:40px;
+position:fixed;
+bottom:100px;
+right:40px;
+z-index:10000;
+}
+</style>
+
+
+
+
+
+
+                    </button>
+                   
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="ba-add-balance-inner mg-top-40">
+            <div class="container">
+              <div class="card tale-bg"
+                <div class="">
+                
+                  <div class="weather-info">
+                    <div class="d-flex">
+                      <div>
+                        <h2 class="mb-0 font-weight-normal"><i class="icon-sun mr-2"></i><sup></sup></h2>
+                      </div>
+                      <div class="ml-2">
+
+                       
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="">
+              <div class="">
+                <div class="">
+                  <div class="">
+                    <div class="">
+                    
+                     
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="">
+                    <div class="">
+                  
+                    </div>
+                  </div>
+                </div>
+    </div>    
+              </div>
+             
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+        
+    
+    <!-- Footer Area -->
+    
+            <h1><div class="footer-bottom text-center">
+                <ul>
+                    <li>
+                        <a href="https://klinikasura.github.io/APLIKASI-V80/">
+<img border="0" src="ICON-V80/BERANDA.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Beranda</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/APLIKASI.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Aplikasi</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/UPLOAD.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Upload</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/POLIKLINIK.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Poliklinik</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+<img border="0" src="ICON-V80/LOGIN.png"  height="40" width="40" /></a>
+                            <i class=""></i>
+                            <p>Login</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors-V80/chart.js/Chart.min.js"></script>
+  <script src="vendors-V80/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors-V80/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js-V80/dataTables.select.min.js"></script>
+ <script src="assets-V80/js/vendor.js"></script>
+    <script src="assets-V80/js/main.js"></script>
+
+
+
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js-V80/off-canvas.js"></script>
+  <script src="js-V80/hoverable-collapse.js"></script>
+  <script src="js-V80/template.js"></script>
+  <script src="js-V80/settings.js"></script>
+  <script src="js-V80/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js-V80/dashboard.js"></script>
+  <script src="js-V80/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
