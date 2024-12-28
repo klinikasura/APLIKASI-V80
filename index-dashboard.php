@@ -76,31 +76,28 @@ if (empty($_SESSION['username'])) {
 
 
 
-    <body class="skin-black">
+    <body class="">
         <!-- header logo: style can be found in header.less -->
-        <header class="header">
-            <a href="index.php" class="logo">
-                RS. Asura
-            </a>
-
+        <header class="">
+            
             <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top" role="">
+            <nav class="" role="">
                 <!-- Sidebar toggle button-->
-                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="">
-                    <span class="sr-only">Toggle navigation</span>
+                <a href="#" class="" data-toggle="" role="">
+                  
                
                 </a>
-                <div class="navbar-right">
+                <div class="">
                     <ul class="nav navbar-nav">
 
                         <!-- User Account: style can be found in dropdown.less -->
-                        <li class="dropdown user user-menu">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <li class="">
+                            <a href="#" class="" data-toggle="">
                                 <i class="fa fa-user"></i>
                                 <span><?php echo $_SESSION['nama']; ?> <i class="caret"></i></span>
                             </a>
-                            <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
-                                <li class="dropdown-header text-center">KARYAWAN</li>
+                            <ul class="">
+                                <li class="dropdown-header text-center">SELAMAT DATANG</li>
 
                                 
 
@@ -112,7 +109,7 @@ if (empty($_SESSION['username'])) {
         </header>
         <?php
         $timeout = 10; // Set timeout minutes
-        $logout_redirect_url = "../login.html"; // Set logout URL
+        $logout_redirect_url = "http://192.168.88.203/dashboard/APPS-ROBOT/GITHUB/LOGIN-V80/"; // Set logout URL
 
         $timeout = $timeout * 60; // Converts minutes to seconds
         if (isset($_SESSION['start_time'])) {
@@ -125,44 +122,8 @@ if (empty($_SESSION['username'])) {
         $_SESSION['start_time'] = time();
         ?>
     <?php } ?>
-    <div class="wrapper row-offcanvas row-offcanvas-left">
-        <!-- Left side column. contains the logo and sidebar -->
-        <aside class="left-side sidebar-offcanvas">
-            <!-- sidebar: style can be found in sidebar.less -->
-            <section class="sidebar">
-                <!-- Sidebar user panel -->
-                <div class="user-panel">
-                    <div>
-                                 <center><img src="<?php echo $_SESSION['foto']; ?>" height="80" width="80" class="img-circle" alt="User Image" style="border: 3px solid white;" /></center>
-                    </div>
-                    <div class="info">
-                        <center>
-                            <p><?php echo $_SESSION['nama']; ?></p>
-                        </center>
-
-                    </div>
-                </div>
-                <!-- search form -->
-                <!--<form action="#" method="get" class="sidebar-form">
-                                <div class="input-group">
-                                    <input type="text" name="q" class="form-control" placeholder="Search..."/>
-                                    <span class="input-group-btn">
-                                        <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
-                                    </span>
-                                </div>
-                            </form> -->
-                <!-- /.search form -->
-                <!-- sidebar menu: : style can be found in sidebar.less -->
-               
-            </section>
-            <!-- /.sidebar -->
-        </aside>
-
-        <aside class="right-side">
-
-            <!-- Main content -->
-
-
+    
+       
 
 <p>
 
@@ -590,20 +551,11 @@ if (empty($_SESSION['username'])) {
 
                     <div class="col-md-8">
                         <!--earning graph start-->
-                        <section class="panel">
-                            <header class="panel-heading">
-                               
-                            </header>
-                            
+                
 
 
                         </section>
-                        <!--earning graph end-->
-
-                    </div>
-                    <div class="col-lg-4">
-
-
+                    
 
 
                         <!--chat start-->
@@ -812,7 +764,7 @@ z-index:10000;
             <h1><div class="footer-bottom text-center">
                 <ul>
                     <li>
-                        <a href="http://192.168.88.203/dashboard/APPS-ROBOT/GITHUB/index-dashboard.php">
+                        <a href="index-dashboard.php">
 <img border="0" src="http://192.168.88.203/dashboard/APPS-ROBOT/ICON/BERANDA.png"  height="40" width="40" /></a>
                             <i class=""></i>
                             <p>Beranda</p>
