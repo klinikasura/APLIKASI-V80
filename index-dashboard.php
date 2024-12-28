@@ -302,9 +302,9 @@ if (empty($_SESSION['username'])) {
                       <td>&nbsp;</td>
                     </tr>
                     <tr>
-                      <td><p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/index.php"><img src="GAMBAR/LAPORAN.png" width="52" height="57" border="0"></a></p>
+                      <td><p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/index2.php"><img src="GAMBAR/LAPORAN.png" width="52" height="57" border="0"></a></p>
                       <p align="center">Riquest</p></td>
-                      <td><p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/index-riquest.php"><img src="GAMBAR/EVENT.png" width="52" height="57" border="0"></a></p>
+                      <td><p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/index-riquest2.php"><img src="GAMBAR/EVENT.png" width="52" height="57" border="0"></a></p>
                       <p align="center">Cek Riquest</p></td>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
@@ -921,7 +921,7 @@ z-index:10000;
 .popcontent img{height:auto}
 }
 </style><br />
- <div class="popbox hide" id="popbox">   <div aria-label='Close' class="pop-overlay" onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'/>   <div class="pop-content">  <a href="https://klinikasura.github.io/APLIKASI-V80/" target="_self" rel="noopener noreferrer" title="box"><br />
+ <div class="popbox hide" id="popbox">   <div aria-label='Close' class="pop-overlay" onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'/>   <div class="pop-content">  <a href="http://192.168.88.203/dashboard/APPS-ROBOT/GITHUB/index-dashboard.php" target="_self" rel="noopener noreferrer" title="box"><br />
     <div class="popcontent">  
 
 
