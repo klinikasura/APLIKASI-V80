@@ -40,7 +40,7 @@ if (empty($_SESSION['username'])) {
         <!-- Theme style -->
         <link href="../css/style.css" rel="stylesheet" type="text/css" />
 
-
+<meta http-equiv="refresh" content="100;url=index-dashboard.php"/>  
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
