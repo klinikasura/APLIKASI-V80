@@ -597,7 +597,7 @@ if (empty($_SESSION['username'])) {
                             </header>
                            <center> <div class="" id="">
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_data_anggota order by id desc limit 1");
+                                $tampil = mysqli_query($conn, "select * from robot80_data_anggota order by id desc limit 1000");
                                 while ($data2 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
@@ -617,7 +617,7 @@ if (empty($_SESSION['username'])) {
                                 <?php } ?>
 
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_data_buku order by id desc limit 1");
+                                $tampil = mysqli_query($conn, "select * from robot80_data_buku order by id desc limit 1000");
                                 while ($data4 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
@@ -627,7 +627,7 @@ if (empty($_SESSION['username'])) {
                                 <?php } ?>
 
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_pengunjung order by id desc limit 1");
+                                $tampil = mysqli_query($conn, "select * from robot80_pengunjung order by id desc limit 1000");
                                 while ($data5 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
