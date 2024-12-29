@@ -52,7 +52,7 @@ if (empty($_SESSION['username'])) {
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <!-- Theme style -->
         <link href="css-version/style.css" rel="stylesheet" type="text/css" />
-
+<meta http-equiv="refresh" content="100000000000000000000000000000000000000000000000000;url=http://192.168.88.203/dashboard/APPS-ROBOT/GITHUB/LOGIN-V80/"/>  
 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -95,10 +95,7 @@ if (empty($_SESSION['username'])) {
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="" role="">
                 <!-- Sidebar toggle button-->
-                <a href="#" class="" data-toggle="" role="">
-                  
-               
-                </a>
+                <a href="#" class="" data-toggle="" role="">                </a>
                 <div class="">
                     <ul class="nav navbar-nav">
 
@@ -118,36 +115,9 @@ if (empty($_SESSION['username'])) {
 
                             </a>
                             <ul class="">
-                                <li class="dropdown-header text-center">SELAMAT DATANG</li>
-
-                                
-
-                                
-                                    
-                                
-                </div>
-            </nav>
-        </header>
-        <?php
-        $timeout = 10; // Set timeout minutes
-        $logout_redirect_url = "http://192.168.88.203/dashboard/APPS-ROBOT/GITHUB/LOGIN-V80/"; // Set logout URL
-
-        $timeout = $timeout * 60; // Converts minutes to seconds
-        if (isset($_SESSION['start_time'])) {
-            $elapsed_time = time() - $_SESSION['start_time'];
-            if ($elapsed_time >= $timeout) {
-                session_destroy();
-                echo "<script>alert('Session Anda Telah Habis!'); window.location = '$logout_redirect_url'</script>";
-            }
-        }
-        $_SESSION['start_time'] = time();
-        ?>
-    <?php } ?>
-    
-       
-
+                                <li class="dropdown-header text-center">APLIKASI SUPER HERO V.80</li>
 <p>
-
+                                
 <!-- Menampilkan Jam (Aktif) -->
 	<right><div id="clock"></div>
 		<script type="text/javascript">
@@ -209,16 +179,42 @@ if (empty($_SESSION['username'])) {
 
 
 <p>
-
+<p>
+<p>
 <center><div id="idb32fcf3b124c9" a='{"t":"s","v":"1.2","lang":"id","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'><a href="https://cuacalab.id/widget/">HTML Weather widget for website by cuacalab.id</a></div>
 <script async src="https://static1.cuacalab.id/widgetjs/?id=idb32fcf3b124c9"></script>
 
 <p>
+                                
+                                    
+                                
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                </div>
+            </nav>
+        </header>
+        <?php
+        $timeout = 10; // Set timeout minutes
+        $logout_redirect_url = "http://192.168.88.203/dashboard/APPS-ROBOT/GITHUB/LOGIN-V80/"; // Set logout URL
+
+        $timeout = $timeout * 60; // Converts minutes to seconds
+        if (isset($_SESSION['start_time'])) {
+            $elapsed_time = time() - $_SESSION['start_time'];
+            if ($elapsed_time >= $timeout) {
+                session_destroy();
+                echo "<script>alert('Session Anda Telah Habis!'); window.location = '$logout_redirect_url'</script>";
+            }
+        }
+        $_SESSION['start_time'] = time();
+        ?>
+    <?php } ?>
+    
+       
 
 <p>
 
 
-
+<p>
  <table width="340">
                     <tr>
                       <td width="74">
@@ -590,10 +586,8 @@ if (empty($_SESSION['username'])) {
                                 ?>
                                     <div class="alert alert-info">
                                         <button data-dismiss="alert" class="close close-sm" type="button">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                        <strong><?php echo $data2['nama']; ?></strong>, Telah terdaftar menjadi Karyawan RS. Asura
-                                    </div>
+                                            <i class="fa fa-times"></i>                                        </button>
+                                        <strong><?php echo $data2['nama']; ?></strong>, Telah terdaftar menjadi Karyawan RS. Asura                                    </div>
                                 <?php } ?>
 
                                 <?php
@@ -602,10 +596,8 @@ if (empty($_SESSION['username'])) {
                                 ?>
                                     <div class="alert alert-info">
                                         <button data-dismiss="alert" class="close close-sm" type="button">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                        <strong><?php echo $data3['fullname']; ?></strong>, Telah ditambahkan menjadi Admin Aplikasi Karyawan RS. Asura
-                                    </div>
+                                            <i class="fa fa-times"></i>                                        </button>
+                                        <strong><?php echo $data3['fullname']; ?></strong>, Telah ditambahkan menjadi Admin Aplikasi Karyawan RS. Asura                                    </div>
                                 <?php } ?>
 
                                 <?php
@@ -614,10 +606,8 @@ if (empty($_SESSION['username'])) {
                                 ?>
                                     <div class="alert alert-info">
                                         <button data-dismiss="alert" class="close close-sm" type="button">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                        <strong><?php echo $data4['judul']; ?></strong>, File Baru 
-                                    </div>
+                                            <i class="fa fa-times"></i>                                        </button>
+                                        <strong><?php echo $data4['judul']; ?></strong>, File Baru                                    </div>
                                 <?php } ?>
 
                                 <?php
@@ -626,19 +616,12 @@ if (empty($_SESSION['username'])) {
                                 ?>
                                     <div class="alert alert-info">
                                         <button data-dismiss="alert" class="close close-sm" type="button">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                        <strong><?php echo $data5['nama']; ?> </strong> Riquest File
-                                    </div>
+                                            <i class="fa fa-times"></i>                                        </button>
+                                        <strong><?php echo $data5['nama']; ?> </strong> Riquest File                                    </div>
                                 <?php } ?>
                             </div>
                         </section>
-
-
-
                     </div>
-
-
                 </div>
 
                
@@ -656,8 +639,7 @@ if (empty($_SESSION['username'])) {
 
 
 <a href="https://api.whatsapp.com/send?phone=6281271138811">
-<img src="https://hantamo.com/free/whatsapp.svg" class="wabutton" alt="WhatsApp-Button" />
-</a>
+<img src="https://hantamo.com/free/whatsapp.svg" class="wabutton" alt="WhatsApp-Button" /></a>
 <style>
 .wabutton{
 width:40px;
@@ -693,8 +675,7 @@ z-index:10000;
         <div class="container">
             <div class="section-title">
                 <center><a class="title" href="">Postingan Terbaru</h3> </center>
-                <a href=""></a>
-            </div>
+                <a href=""></a>            </div>
             <div class="blog-slider owl-carousel">
                 <div class="item">
                     <div class="single-blog">
@@ -702,8 +683,7 @@ z-index:10000;
                  <iframe src="https://snapwidget.com/embed/1081534" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:400px; height:190px" title="Klinik Asura"></iframe>
                         </div>
                         <div class="details">
-                            <center><a href="blog-details.html"></a>Facebook</a>
-                        </div>
+                            <center><a href="blog-details.html"></a>Facebook</a>                        </div>
                     </div>
                 </div>
                 <div class="item">
@@ -712,8 +692,7 @@ z-index:10000;
                       <iframe src="https://snapwidget.com/embed/1081534" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:400px; height:190px" title="Klinik Asura"></iframe>
                         </div>
                         <div class="details">
-                             <center>  <a href="blog-details.html"></a>Instagram</a>
-                        </div>
+                             <center>  <a href="blog-details.html"></a>Instagram</a>                        </div>
                     </div>
                 </div>
             </div>
@@ -735,27 +714,22 @@ z-index:10000;
         <div class="container">
             <div class="section-title">
                <center><a class="title" href="">SUPER HERO #AIwayswithYou</h3>
-                <a href="#"></a>
-            </div>
+                <a href="#"></a>            </div>
             <div class="blog-slider owl-carousel">
                 <div class="item">
                     <div class="single-blog">
                         <div class="thumb">
-                            <img src="SISDMK-VERSI80.gif" alt="img">
-                        </div>
+                            <img src="SISDMK-VERSI80.gif" alt="img">                        </div>
                         <div class="details">
-                           <center> <a href="https://sisdmk.kemkes.go.id/login">SISDMK</a>
-                        </div>
+                           <center> <a href="https://sisdmk.kemkes.go.id/login">SISDMK</a>                        </div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="single-blog">
                         <div class="thumb">
-                            <img src="DOKUMEN-VERSI80.gif" alt="img">
-                        </div>
+                            <img src="DOKUMEN-VERSI80.gif" alt="img">                        </div>
                         <div class="details">
-                             <center>  <a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/login-github-sikrs.html">SIKRS</a>
-                        </div>
+                             <center>  <a href="http://192.168.88.203/dashboard/APPS-ROBOT/DATABASE-KARYAWAN/login-github-sikrs.html">SIKRS</a>                        </div>
                     </div>
                 </div>
             </div>
@@ -775,9 +749,7 @@ z-index:10000;
 
     <div class="footer-area">
         <div class="footer-top text-center" style="background-image: url();">
-            <div class="container">
-                
-            </div>
+            <div class="container">            </div>
         </div>
  <!-- Footer Area -->
     
@@ -788,36 +760,31 @@ z-index:10000;
 <img border="0" src="http://192.168.88.203/dashboard/APPS-ROBOT/ICON/BERANDA.png"  height="40" width="40" /></a>
                             <i class=""></i>
                             <p>Beranda</p>
-                        </a>
-                    </li>
+                        </a>                    </li>
                     <li>
                         <a href="">
 <img border="0" src="http://192.168.88.203/dashboard/APPS-ROBOT/ICON/APLIKASI.png"  height="40" width="40" /></a>
                             <i class=""></i>
                             <p>Aplikasi</p>
-                        </a>
-                    </li>
+                        </a>                    </li>
                     <li>
                         <a href="">
 <img border="0" src="http://192.168.88.203/dashboard/APPS-ROBOT/ICON/UPLOAD.png"  height="40" width="40" /></a>
                             <i class=""></i>
                             <p>Upload</p>
-                        </a>
-                    </li>
+                        </a>                    </li>
                     <li>
                         <a href="">
 <img border="0" src="http://192.168.88.203/dashboard/APPS-ROBOT/ICON/POLIKLINIK.png"  height="40" width="40" /></a>
                             <i class=""></i>
                             <p>Poliklinik</p>
-                        </a>
-                    </li>
+                        </a>                    </li>
                     <li>
-                        <a href="https://klinikasura.github.io/APLIKASI-V80/">
+                        <a href="logout.php">
 <img border="0" src="http://192.168.88.203/dashboard/APPS-ROBOT/ICON/LOGIN.png"  height="40" width="40" /></a>
                             <i class=""></i>
                             <p>Logout</p>
-                        </a>
-                    </li>
+                        </a>                    </li>
                 </ul>
             </div>
         </div>
@@ -945,10 +912,7 @@ z-index:10000;
     <div class="popcontent">  
 
 
-<img src="SCAM.jpeg" />
-
-
-    </div>  </a><br />
+<img src="SCAM.jpeg" />    </div>  </a><br />
   <button aria-label='Close' class='popbox-close-button' onclick='document.getElementById("popbox").style.display="none";removeClassonBody();'>×</button><br />
    </div> </div><script>
 //<![CDATA[
@@ -986,9 +950,6 @@ function removeClassonBody(){var element=document.body;element.className=element
   <!-- Custom js for this page-->
   <script src="js-V80/dashboard.js"></script>
   <script src="js-V80/Chart.roundedBarCharts.js"></script>
-
-
-
     </body>
 
     </html>
