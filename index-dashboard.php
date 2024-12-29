@@ -79,7 +79,12 @@ if (empty($_SESSION['username'])) {
 
 
 
-
+ <div class="footer-area">
+        <div class="footer-top text-center" style="background-image: url();">
+            <div class="container">
+                
+            </div>
+        </div>
 
 
 
@@ -103,20 +108,24 @@ if (empty($_SESSION['username'])) {
                         <li class="">
                             <a href="#" class="" data-toggle="">
                                 <i class="fa fa-user"></i>
-                                <span><?php echo $_SESSION['nama']; ?> <i class="caret"></i></span>
-
-
-
-<a href="edit-anggota.php?hal=edit&kd=<?php echo $_SESSION['id']; ?>" class="btn btn-sm btn-primary" Target="_blank"> CETAK KARTU KARYAWAN <i ></i></a>
+                                <span><?php echo $_SESSION['nama']; ?>
 
 
 
 
+  <div class="col-6">
 
-                            </a>
-                            <ul class="">
-                                <li class="dropdown-header text-center">APLIKASI SUPER HERO V.80</li>
-<p>
+
+<a href="edit-anggota.php?hal=edit&kd=<?php echo $_SESSION['id']; ?>" class="btn btn-green ba-add-balance-btn" Target="_blank"> CETAK KARTU KARYAWAN <i ></i></a>
+
+
+
+
+
+                           
+                        
+                                <li class=""></li>
+    <p>&nbsp;</p>
                                 
 <!-- Menampilkan Jam (Aktif) -->
 	<right><div id="clock"></div>
@@ -125,28 +134,36 @@ if (empty($_SESSION['username'])) {
 		function showTime() {
 		    var a_p = "";
 		    var today = new Date();
+
 		    var curr_hour = today.getHours();
 		    var curr_minute = today.getMinutes();
 		    var curr_second = today.getSeconds();
 		    if (curr_hour < 24) {
+
 		        a_p = "(WIB)";
 		    } else {
 		        a_p = "(WIB)";
 		    }
+
 		    if (curr_hour == 0) {
+
 		        curr_hour = 24;
 		    }
 		    if (curr_hour > 24) {
+
 		        curr_hour = curr_hour - 24;
 		    }
 		    curr_hour = checkTime(curr_hour);
 		    curr_minute = checkTime(curr_minute);
+
 		    curr_second = checkTime(curr_second);
 		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
 		    }
 
+
 		function checkTime(i) {
 		    if (i < 10) {
+
 
 		        i = "0" + i;
 		    }
@@ -160,6 +177,7 @@ if (empty($_SESSION['username'])) {
 		
 		<script type='text/javascript'>
 			<!--
+
 			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
 			var date = new Date();
@@ -178,8 +196,7 @@ if (empty($_SESSION['username'])) {
 
 
 
-<p>
-<p>
+
 <p>
 <center><div id="idb32fcf3b124c9" a='{"t":"s","v":"1.2","lang":"id","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'><a href="https://cuacalab.id/widget/">HTML Weather widget for website by cuacalab.id</a></div>
 <script async src="https://static1.cuacalab.id/widgetjs/?id=idb32fcf3b124c9"></script>
@@ -188,7 +205,7 @@ if (empty($_SESSION['username'])) {
                                 
                                     
                                 
-                                <p>&nbsp;</p>
+                            
                                 <p>&nbsp;</p>
                                 </div>
             </nav>
