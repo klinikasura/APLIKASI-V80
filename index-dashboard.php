@@ -67,11 +67,23 @@ if (empty($_SESSION['username'])) {
         </style>
 
 <audio autoplay>
-    <source src="AUDIO-2.mp3" type="audio/mpeg">
+    <source src="INFO2.mp3" type="audio/mpeg">
     </audio>
 
 
     </head>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -95,6 +107,15 @@ if (empty($_SESSION['username'])) {
                             <a href="#" class="" data-toggle="">
                                 <i class="fa fa-user"></i>
                                 <span><?php echo $_SESSION['nama']; ?> <i class="caret"></i></span>
+
+
+
+<a href="edit-anggota.php?hal=edit&kd=<?php echo $_SESSION['id']; ?>" class="btn btn-sm btn-primary" Target="_blank"> CETAK KARTU KARYAWAN <i ></i></a>
+
+
+
+
+
                             </a>
                             <ul class="">
                                 <li class="dropdown-header text-center">SELAMAT DATANG</li>
@@ -201,7 +222,7 @@ if (empty($_SESSION['username'])) {
  <table width="340">
                     <tr>
                       <td width="74">
-                      <p align="center"><a href="http://192.168.88.203/dashboard"><img src="GAMBAR/KARYAWAN-V80.png" width="52" height="57" border="0"></a></p>                        <p align="center">Karyawan</p></td>
+                      <p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/index.php"><img src="GAMBAR/KARYAWAN-V80.png" width="52" height="57" border="0"></a></p>                        <p align="center">Karyawan</p></td>
                       <td width="83">
                       <p align="center"><a href="http://192.168.88.203/dashboard/MASTER-APLIKASI/E-DOKTER/E-DOKTER-V2/login.php"><img src="GAMBAR/DOKTER.png" width="52" height="57" border="0"></a></p>                        <p align="center">Dokter</p></td>
                       <td width="79">
@@ -212,10 +233,10 @@ if (empty($_SESSION['username'])) {
                     </tr>
                     <tr>
                       <td>
-                        <p align="center"><a href="http://192.168.88.203/dashboard/APLIKASI-SATUSEHAT/mlite-master/APLIKASI-SOAP/"><img src="GAMBAR/LAB.png" width="52" height="57" border="0"></a></p>
+                        <p align="center"><a href="http://192.168.88.203/dashboard/LOGIN-SYSTEM-ROBOT/"><img src="GAMBAR/LAB.png" width="52" height="57" border="0"></a></p>
                         <p align="center">Lab</p>                      </td>
                       <td>
-                        <p align="center"><a href="http://192.168.88.203/dashboard/APLIKASI-SATUSEHAT/mlite-master/APLIKASI-SOAP/"><img src="GAMBAR/FARMASI.png" width="52" height="57" border="0"></a></p>
+                        <p align="center"><a href="http://192.168.88.203/dashboard/LOGIN-SYSTEM-ROBOT/"><img src="GAMBAR/FARMASI.png" width="52" height="57" border="0"></a></p>
                         <p align="center">Farmasi</p>                      </td>
                       <td>
                         <p align="center"><a href="http://192.168.88.203/webapps/presensi/"><img src="GAMBAR/ABSENSI.png" width="52" height="57" border="0"></a></p>
@@ -559,11 +580,10 @@ if (empty($_SESSION['username'])) {
 
 
                         <!--chat start-->
-                        <section class="panel">
-                            <header class="panel-heading">
-                                Pemberitahuan
+                       
+                               
                             </header>
-                            <div class="panel-body" id="noti-box">
+                           <center> <div class="" id="">
                                 <?php
                                 $tampil = mysqli_query($conn, "select * from robot80_data_anggota order by id desc limit 1");
                                 while ($data2 = mysqli_fetch_array($tampil)) {
@@ -925,7 +945,7 @@ z-index:10000;
     <div class="popcontent">  
 
 
-<img src="GAMBAR/PROMO.gif" />
+<img src="SCAM.jpeg" />
 
 
     </div>  </a><br />
