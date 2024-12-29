@@ -52,7 +52,7 @@ if (empty($_SESSION['username'])) {
         <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <!-- Theme style -->
         <link href="css-version/style.css" rel="stylesheet" type="text/css" />
-<meta http-equiv="refresh" content="100;url=https://klinikasura.github.io/APLIKASI-V80/"/>  
+<meta http-equiv="refresh" content="100;url=logout.php"/>  
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
