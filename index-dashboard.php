@@ -392,6 +392,106 @@ if (empty($_SESSION['username'])) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+                      <td><p align="center"><a href="https://hfis.bpjs-kesehatan.go.id/hfis/login"><img src="BPJS.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">HFIS </p>                      </td>
+                      <td><p align="center"><a href="https://pcarejkn.bpjs-kesehatan.go.id/eclaim/login"><img src="BPJS.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">ECLAIM</p></td>
+                      <td><p align="center"><a href="https://antrean.bpjs-kesehatan.go.id/antrean-faskes/#/access/signin"><img src="BPJS.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">ANTREAN</p></td>
+                      <td><p align="center"><a href="https://pelkesonline.inhealth.co.id/Account/Login?ReturnUrl=%2f"><img src="INHEALTH.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">PALKES</p></td>
+
+
+
+
+
+
+
+
+
+<tr>
+                      <td><p align="center"><a href="https://p2ab.net/#!/cpd/showcase"><img src="IAI.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">IAI </p>                      </td>
+                      <td><p align="center"><a href="https://www.patelki.or.id/"><img src="PATELKI.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">PALTELKI</p></td>
+                      <td><p align="center"><a href="https://kemkes.go.id/id/informasi-klinik"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">FASKES</p></td>
+                      <td><p align="center"><a href="https://akun-yankes.kemkes.go.id/?continued=https%3A%2F%2Fregistrasifasyankes.kemkes.go.id%2Flanding"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">ASKES</p></td>
+
+
+
+
+
+
+
+<tr>
+                      <td><p align="center"><a href="https://ditmutunakes.kemkes.go.id/index.php/institusi-terakreditasi/1"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">AKRE </p>                      </td>
+                      <td><p align="center"><a href="https://kki.go.id/registrasi/auth/login"><img src="KKI.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">KKI</p></td>
+                      <td><p align="center"><a href="https://kki.go.id/cekdokter/form"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">CEK DOKTER</p></td>
+                      <td><p align="center"><a href="https://www.bidan-delima.id/cari-bidan"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">CEK BIDAN</p></td>
+
+
+
+
+
+
+
+
+<tr>
+                      <td><p align="center"><a href="https://www.postman.com/satusehat/satusehat-public/overview"><img src="POSMAN.svg" width="52" height="57" border="0"></a></p>
+                      <p align="center">POSMAN </p>                      </td>
+                      <td><p align="center"><a href="https://api.whatsapp.com/send/?phone=628118165165&text=&type=phone_number&app_absent=0&utm_medium=social&utm_source=linktree&utm_campaign=pandawa+%28pelayanan+administrasi+melalui+whatsapp%29"><img src="BPJS.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">PANDAWA</p></td>
+                      <td><p align="center"><a href="https://faskes.bpjs-kesehatan.go.id/aplicares/#/app/dashboard"><img src="BPJS.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">APLICER</p></td>
+                      <td><p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/panduan.php"><img src="PANDUAN.png" width="52" height="57" border="0"></a></p>
+                      <p align="center">PANDUAN</p></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <tr>
                       <td>&nbsp;</td>
                       <td>&nbsp;</td>
@@ -663,7 +763,7 @@ if (empty($_SESSION['username'])) {
                             </header>
                            <center> <div class="" id="">
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_data_anggota order by id desc limit 1000");
+                                $tampil = mysqli_query($conn, "select * from robot80_data_anggota order by id desc limit 1");
                                 while ($data2 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
@@ -673,7 +773,7 @@ if (empty($_SESSION['username'])) {
                                 <?php } ?>
 
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_admin order by user_id desc limit 1");
+                                $tampil = mysqli_query($conn, "select * from robot80_admin order by user_id desc limit 0");
                                 while ($data3 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
@@ -683,7 +783,7 @@ if (empty($_SESSION['username'])) {
                                 <?php } ?>
 
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_data_buku order by id desc limit 1000");
+                                $tampil = mysqli_query($conn, "select * from robot80_data_buku order by id desc limit 1");
                                 while ($data4 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
@@ -693,7 +793,7 @@ if (empty($_SESSION['username'])) {
                                 <?php } ?>
 
                                 <?php
-                                $tampil = mysqli_query($conn, "select * from robot80_pengunjung order by id desc limit 1000");
+                                $tampil = mysqli_query($conn, "select * from robot80_pengunjung order by id desc limit 0");
                                 while ($data5 = mysqli_fetch_array($tampil)) {
                                 ?>
                                     <div class="alert alert-info">
