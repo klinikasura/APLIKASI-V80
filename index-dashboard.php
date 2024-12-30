@@ -462,7 +462,7 @@ if (empty($_SESSION['username'])) {
                       <p align="center">PANDAWA</p></td>
                       <td><p align="center"><a href="https://faskes.bpjs-kesehatan.go.id/aplicares/#/app/dashboard"><img src="BPJS.png" width="52" height="57" border="0"></a></p>
                       <p align="center">APLICER</p></td>
-                      <td><p align="center"><a href="http://192.168.88.203/dashboard/APPS-ROBOT/panduan.php"><img src="PANDUAN.png" width="52" height="57" border="0"></a></p>
+                      <td><p align="center"><a href="https://satusehat.kemkes.go.id/platform/docs/id/kyc/kyc-doc/guide-it-fasyankes/"><img src="PANDUAN.png" width="52" height="57" border="0"></a></p>
                       <p align="center">PANDUAN</p></td>
 
 
