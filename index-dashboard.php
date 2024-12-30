@@ -444,9 +444,9 @@ if (empty($_SESSION['username'])) {
                       <td><p align="center"><a href="https://kki.go.id/registrasi/auth/login"><img src="KKI.png" width="52" height="57" border="0"></a></p>
                       <p align="center">KKI</p></td>
                       <td><p align="center"><a href="https://kki.go.id/cekdokter/form"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
-                      <p align="center">CEK DOKTER</p></td>
+                      <p align="center">CEKDOK</p></td>
                       <td><p align="center"><a href="https://www.bidan-delima.id/cari-bidan"><img src="SATUSEHAT-INTEGRASI-VERSI-80-2.png" width="52" height="57" border="0"></a></p>
-                      <p align="center">CEK BIDAN</p></td>
+                      <p align="center">CEKBID</p></td>
 
 
 
