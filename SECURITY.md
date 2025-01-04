@@ -91,9 +91,9 @@ currently being supported with security updates.
 | Version | Supported          |
 | ------- | ------------------ |
 | 8.1.x   | :white_check_mark: |
-| 8.0.x   | :x:                |
+| 4.0.x   | :x:                |
 | 7.0.x   | :white_check_mark: |
-| < 7.0   | :x:                |
+| < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
 
@@ -107,12 +107,10 @@ declined, etc.
 
 MOBILE / HANDPHONE 
 
-ANDROID 12
-IOS 12
 
 | Version | Supported          |
 | ------- | ------------------ |
 | OS ANDROID 12.x   | :white_check_mark: |
-| 12.x   | :x:                |
+| 04.x   | :x:                |
 | IOS 12.x   | :white_check_mark: |
-| < 12   | :x:
+| < 04  | :x:
