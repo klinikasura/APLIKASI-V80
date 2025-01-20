@@ -68,7 +68,18 @@ TAMPILAN MOBILE / HANDPHONE :
 UPDATE TAMPILAN : 04012025-0800
 
 
-https://raw.githubusercontent.com/klinikasura/APLIKASI-V80/refs/heads/main/Screenshot_20250120-201648.jpg
+8.0_(20012025-0800)
+
+![Screenshot_20250120-201648](https://github.com/user-attachments/assets/ded279ef-f868-4d9c-ae55-82e2eee2b9e2)
+
+![Screenshot_20250120-201728](https://github.com/user-attachments/assets/6bcbafa3-057d-45d1-8149-229fe336dc7f)
+
+
+![Screenshot_20250120-201743](https://github.com/user-attachments/assets/b3b7ba8b-15e0-47d0-bd81-23880cde3709)
+
+
+![Screenshot_20250120-201749](https://github.com/user-attachments/assets/ee35eff1-9659-4aa8-84ce-766bd71a8186)
+
 
 
 UPDATE TAMPILAN : 20012025-0800
