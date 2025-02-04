@@ -97,16 +97,53 @@
 
 
 
+<!DOCTYPE>
+<html lang='en'>
+<head>
+    
+    <style>
+        .loading-gif {
+            max-width: 5000px;
+        }
 
-<!-- Star floating twitter Bird -->
-<script type="text/javascript" src="https://googledrive.com/host/0BxH5pEKXqBWUSmpWajYwdTZMWXc/burung-twitter-terbang-di-blog-masyadi-com.js"></script>
-<script type="text/javascript">
-var birdSprite="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJfukIw76h76RtdbG3hGI1RVw8Umz8oeSJiSSt1tTvKt4xFSuRrL78OZNZmoG7l8YsKKa3kmKWZP9H_6vVBM6lLc_1xtq0wq5HLf7ftAgJaQDA5C_GsOQT4AJQ5alszQ09cw5P9Owg6wQ/s1600/cyan+bird.png";
-var targetElems=new Array("img","hr","table","td","div","input","textarea","button","select","ul","ol","li","h1","h2","h3",
-"h4","p","code","object","a","b","strong","span");
-var twitterAccount = "http://twitter.com/cara_zain";
-var tweetThisText = "#";
-tripleflapInit();
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #191f26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 12s; /** change to 1s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--- Your content goes here -->
+
+<div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif"/>
+</div>
+
+<!-- js to hide preloader loading is done -->
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
 </script>
-<!-- End floating twitter Bird -->
-
+</body>
+</html>
