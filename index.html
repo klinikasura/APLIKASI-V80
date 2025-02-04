@@ -100,8 +100,53 @@
 
 
 
+<script>
+// Script Salju Turun di Blog Beserta Lagu Natal by storipena.com
+(function() {
+    var numberOfSnowflakes = 50; // Jumlah salju pertama
+    createSnowflakesContinuously();
 
-<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju-2.js" type="text/javascript"></script>
+    function createSnowflake() {
+        var snowflake = document.createElement('div');
+        snowflake.className = 'snowflake';
+        snowflake.style.left = Math.random() * 100 + 'vw';
+        snowflake.style.animationDelay = Math.random() * 5 + 's'; // Waktu tunda munculnya
+        snowflake.style.opacity = Math.random() + 0.5;
+        snowflake.style.fontSize = Math.random() * 20 + 10 + 'px';
+        snowflake.innerHTML = '&#10052;'; // Karakter salju
+        document.body.appendChild(snowflake);
+
+        setTimeout(function() {
+            document.body.removeChild(snowflake);
+        }, 15000); // Memastikan salju tetap selama 15 detik
+    }
+
+    function createSnowflakesContinuously() {
+        setInterval(function() {
+            createSnowflake();
+        }, 500); // Interval dalam milidetik untuk menambahkan salju secara berkala
+    }
+
+    var style = document.createElement('style');
+    style.innerHTML = 
+        '.snowflake {' +
+            'position: fixed;' +
+            'top: -10px;' +
+            'z-index: 9999;' +
+            'animation: fall 15s linear infinite;' + /* Durasi animasi */
+            'pointer-events: none;' + /* Agar tidak mengganggu interaksi */
+            'color: white;' +
+        '}' +
+
+        '@keyframes fall {' +
+            'to {' +
+                'transform: translateY(100vh) rotate(360deg);' +
+            '}' +
+        '}'
+    ;
+    document.head.appendChild(style);
+})();
+</script>
 
 </body>
 </html>
