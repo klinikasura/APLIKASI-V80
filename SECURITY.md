@@ -84,6 +84,20 @@ UPDATE TAMPILAN LAMA
 
 UPDATE TAMPILAN BARU
 
+![Screenshot_20250206-132037](https://github.com/user-attachments/assets/ca6e467b-ba72-41ce-80e8-8990e000441c)
+
+
+![Screenshot_20250206-132044](https://github.com/user-attachments/assets/a882411d-7cab-4105-b666-5779d71b78b6)
+
+
+![Screenshot_20250206-170328](https://github.com/user-attachments/assets/926ab3bf-3a8f-4d6c-9f7a-46c98555ebf4)
+
+
+![Screenshot_20250206-132451](https://github.com/user-attachments/assets/eae9732b-fca5-4322-8fdf-522f711bd11b)
+
+
+![Screenshot_20250206-132058](https://github.com/user-attachments/assets/944dac87-4181-472d-8e2c-c72d7d1d9c6c)
+
   -----------------------------------------------------------------------------------
 
  PROGRAM APLIKASI AI ROBOT SYSTEM V.80 INI HANYA DI PERUNTUKAN DI RS KAMI TIDAK DI PUBLIKASI.
@@ -91,6 +105,7 @@ UPDATE TAMPILAN BARU
 
  TERIMA KASIH.
 
+**Full Changelog**: https://github.com/klinikasura/APLIKASI-V80/compare/8.0_(05022025-0800)...8.0_(06022025-0800)
 
 
 
