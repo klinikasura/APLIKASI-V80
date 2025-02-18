@@ -51,6 +51,12 @@ LINK :
 
 https://klinikasura.github.io/APLIKASI-V80/
 
+  ----------------------------------------------------------------------------------
+  
+DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 AUDIO
+
+LINK : https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AUDIO.apk
+
   -----------------------------------------------------------------------------------
 
 TAMPILAN DESKTOP / KOMPUTER :
@@ -98,17 +104,33 @@ UPDATE TAMPILAN BARU
 
 ![Screenshot_20250206-132058](https://github.com/user-attachments/assets/944dac87-4181-472d-8e2c-c72d7d1d9c6c)
 
+
+![Screenshot_20250218-201126](https://github.com/user-attachments/assets/8023aeda-adab-47df-a5e9-17cc8f2f2a65)
+
+
+![Screenshot_20250218-195938](https://github.com/user-attachments/assets/ab9fcd86-85b8-4c4e-a0ed-948caae832df)
+
+
+![Screenshot_20250218-200829](https://github.com/user-attachments/assets/2c9f30f4-fd59-483d-bbc9-c01f62457a42)
+
+
+https://github.com/user-attachments/assets/372db58c-7054-422b-8584-e057619606ad
+
+
+![Screenshot_20250218-223933](https://github.com/user-attachments/assets/29cb1318-8f88-475c-871c-39afbb6cbf2e)
+
+
+![Screenshot_20250218-223937](https://github.com/user-attachments/assets/9002afe9-c846-404e-93a6-7e1e4d78d080)
+
+
   -----------------------------------------------------------------------------------
 
  PROGRAM APLIKASI AI ROBOT SYSTEM V.80 INI HANYA DI PERUNTUKAN DI RS KAMI TIDAK DI PUBLIKASI.
- JARINGAN GITHUB INI DI BUAT UNTUK PENGHUBUNG APLIKASI AI ROBOT SYSTEM V.80 SEBAGAI API (Application Programming Interface).
+JARINGAN GITHUB INI DI BUAT UNTUK PENGHUBUNG APLIKASI AI ROBOT SYSTEM V.80 SEBAGAI API (Application Programming Interface).
 
- TERIMA KASIH.
+TERIMA KASIH.
 
-**Full Changelog**: https://github.com/klinikasura/APLIKASI-V80/compare/8.0_(05022025-0800)...8.0_(06022025-0800)
-
-
-
+Full Changelog: https://github.com/klinikasura/APLIKASI-V80/compare/8.0_(05022025-0800)...8.0_(06022025-0800)
 
 
 KONFIGURASI:
