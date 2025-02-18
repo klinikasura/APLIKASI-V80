@@ -15,14 +15,14 @@ const textToSpeech = () => {
     if (synth.speaking && isSpeaking) {
       button.innerText = "Pause";
       synth.resume();
-      isSpeaking = false;
+      isSpeaking = true;
     } else {
       button.innerText = "Resume";
       synth.pause();
       isSpeaking = true;
     }
   } else {
-    isSpeaking = false;
+    isSpeaking = true;
     button.innerText = "Speaking";
   }
 
