@@ -117,6 +117,24 @@ UPDATE TAMPILAN BARU
 ![image](https://github.com/user-attachments/assets/08bcc59b-276e-4c61-85f6-13d4952b0ef0)
 
 
+![image](https://github.com/user-attachments/assets/1c5df883-480f-4d55-ad0a-7e8373f41399)
+
+
+![image](https://github.com/user-attachments/assets/15273792-88cc-45d6-a4c2-a2a952e03585)
+
+
+
+![image](https://github.com/user-attachments/assets/4cd3a75c-1f70-409c-b7d4-c6c289cd285d)
+
+
+
+![image](https://github.com/user-attachments/assets/7c81e162-42a6-42a3-b0cb-33cbea481c37)
+
+
+
+![image](https://github.com/user-attachments/assets/2bc36af5-b310-4f4f-9b7a-be664c4351e3)
+
+
   -----------------------------------------------------------------------------------
 
  PROGRAM APLIKASI AI ROBOT SYSTEM V.80 INI HANYA DI PERUNTUKAN DI RS KAMI TIDAK DI PUBLIKASI.
