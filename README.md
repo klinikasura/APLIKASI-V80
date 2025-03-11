@@ -7,6 +7,65 @@ KODE ROBOT : V80
 KODE KEAMANAN : V80
 
 
+AI ROBOT SYSTEM V80
+PEMBUATAN TAHUN 2023 RILIS 2024
+
+RIVIEW DAN DOWNLOAD
+
+  -------------------------------------------------------------------------------
+CEK UPDATE VERSI 8.0 RILIS
+
+LINK : https://github.com/klinikasura/APLIKASI-V80/releases/ (VERSI FINAL)
+
+  -------------------------------------------------------------------------------
+
+CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80
+
+LINK : https://klinikasura.github.io/APLIKASI-V80/ (VERSI FINAL)
+
+  -------------------------------------------------------------------------------
+
+DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80
+
+LINK : https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AI-ROBOT-SYSTEM-V80-10032025-0800.apk
+
+  -------------------------------------------------------------------------------
+  
+DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 AUDIO
+
+LINK : https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AUDIO.apk
+
+  -------------------------------------------------------------------------------
+
+WIDGET AI ROBOT SYSTEM V80
+
+  -------------------------------------------------------------------------------
+
+CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI HOTSPOT)
+
+LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-HOTSPOT/login (VERSI FINAL)
+
+  -----------------------------------------------------------------------------
+
+CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI CHAT)
+
+LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-AI-CHAT (VERSI FINAL
+
+  -----------------------------------------------------------------------------
+
+CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI CUACA)
+
+LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-CUACA/ (VERSI FINAL
+
+  -----------------------------------------------------------------------------
+
+CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI SLIDER)
+
+LINK : https://klinikasura.github.io/APLIKASI-V80/SLIDER/ (VERSI FINAL
+
+  -------------------------------------------------------------------------------
+
+
   ---------------------------- RINCIAN PEMBAHARUAN -----------------------------
 
 - Pembaharuan Coding
@@ -39,27 +98,8 @@ RINCIAN :
 
   ---------------------------- APLIKASI AI ROBOT SYSTEM V.80 ---------------------
 
-  UPDATE VERSI 8.0 RILIS
 
- LINK : https://github.com/klinikasura/APLIKASI-V80/releases/ (VERSI FINAL)
-
-  ----------------------------------------------------------------------------------
-
-  RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80
-
-LINK :
-
-https://klinikasura.github.io/APLIKASI-V80/
-
-  ----------------------------------------------------------------------------------
-  
-DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 AUDIO
-
-LINK : https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AUDIO.apk
-
-  -----------------------------------------------------------------------------------
-
-TAMPILAN DESKTOP / KOMPUTER :
+ TAMPILAN DESKTOP / KOMPUTER :
 
   ![Cuplikan layar dari 2024-11-27 11-12-49](https://github.com/user-attachments/assets/608bcddc-ae4b-4033-bb8f-c51950cb20b1)
 
@@ -142,4 +182,4 @@ UPDATE TAMPILAN BARU
 
  TERIMA KASIH.
 
-**Full Changelog**: https://github.com/klinikasura/APLIKASI-V80/compare/8.0_(05022025-0800)...8.0_(06022025-0800)
+**Full Changelog**:
