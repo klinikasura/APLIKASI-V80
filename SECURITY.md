@@ -1,16 +1,15 @@
 # APLIKASI-V80
 APLIKASI AI ROBOT SYSTEM V.80
 
-DEVELOPMENT IT DESAIN HAMBA ALLOH.
+VERSI TERBARU DI DEVELOPMENT OLEH IT DESAIN HAMBA ALLOH.
 
-KODE ROBOT : V80
-KODE KEAMANAN : V80
+DI LINDUNGI DENGAN KODE ROBOT : V80 DAN KODE KEAMANAN : V80
 
 
-AI ROBOT SYSTEM V80
-PEMBUATAN TAHUN 2023 RILIS 2024
+NAMA APLIKASI : AI ROBOT SYSTEM V80 VERSI 8
+PEMBUATAN TAHUN 2023 RILIS TAHUN 2024
 
-RIVIEW DAN DOWNLOAD
+CEK RIVIEW DAN DOWNLOAD
 
   -------------------------------------------------------------------------------
 CEK UPDATE VERSI 8.0 RILIS
@@ -68,114 +67,67 @@ LINK : https://klinikasura.github.io/APLIKASI-V80/SLIDER/ (VERSI FINAL
 
   ---------------------------- RINCIAN PEMBAHARUAN -----------------------------
 
-- Pembaharuan Coding
+- Pembaharuan Coding & Program Kecerdasan Buatan INTEL AQ 
 
-- Pembaharuan System Keamanan
+- Pembaharuan System Keamanan Cyber 
 
-- Pembaharuan Tampilan dan Desain
+- Pembaharuan Tampilan dan Desain Versi 8
 
-- Pembaharuan AI Robot System
+- Pembaharuan AI Robot System Widget Konek Database System
 
-- Pembaharuan di Aplikasi Mobile AI Robot System
+- Pembaharuan di Aplikasi Mobile AI Robot System Versi 8 PRO
 
-- Pembaharuan di Aplikasi Komputer
+- Pembaharuan di Aplikasi Komputer System Versi 8 PRO
 
-- Pembaharuan Integrasi SATU SEHAT
+- Pembaharuan Integrasi SATU SEHAT KEMENKES & ASKES Nasional 
 
-- Pembaharuan Jaringan Internet
+- Pembaharuan Jaringan Internet Otomatis Smart
 
 
 RINCIAN :
 
-- CODING DAN PROGRAM
+- CODING DAN PROGRAM LEVEL 8
 
-- APLIKASI MOBILE
+- APLIKASI MOBILE LEVEL 8
 
-- GITHUB API UPDATE
+- GITHUB API UPDATE LEVEL 8
 
-- RILIS SYSTEM UPDATE
+- RILIS SYSTEM UPDATE LEVEL 8
 
 
   ---------------------------- APLIKASI AI ROBOT SYSTEM V.80 ---------------------
 
 
- TAMPILAN DESKTOP / KOMPUTER :
+ UPDATE TAMPILAN VERSI DESKTOP / KOMPUTER :
 
-  ![Cuplikan layar dari 2024-11-27 11-12-49](https://github.com/user-attachments/assets/608bcddc-ae4b-4033-bb8f-c51950cb20b1)
-
-  ![Cuplikan layar dari 2024-11-27 11-13-46](https://github.com/user-attachments/assets/0ff2938b-16a1-4936-87eb-260ae0320c1b)
-
-TAMPILAN MOBILE / HANDPHONE : 
-
-![Screenshot_20250104-223159](https://github.com/user-attachments/assets/5f966a2b-f9ea-4a18-af37-1b34ec253012)
-
-![Screenshot_20250104-223209](https://github.com/user-attachments/assets/045974df-32ea-44df-9e9f-db4e75f757f5)
+![image](https://github.com/user-attachments/assets/3adcb7eb-2a20-4845-bb61-2d10535625c2)
 
 
-
-UPDATE TAMPILAN LAMA
+UPDATE TAMPILAN LAMA : 
 
 
 ![Screenshot_20250120-201648](https://github.com/user-attachments/assets/ded279ef-f868-4d9c-ae55-82e2eee2b9e2)
 
-![Screenshot_20250120-201728](https://github.com/user-attachments/assets/6bcbafa3-057d-45d1-8149-229fe336dc7f)
+
+UPDATE TAMPILAN BARU VERSI HANDPHONE / ANDROID / IPHONE : 
 
 
-![Screenshot_20250120-201743](https://github.com/user-attachments/assets/b3b7ba8b-15e0-47d0-bd81-23880cde3709)
+![WhatsApp Image 2025-05-17 at 22 36 01](https://github.com/user-attachments/assets/c3cbf10a-3bf0-4f91-a3b4-8b2a6cbf31d3)
 
+![WhatsApp Image 2025-05-17 at 22 36 01 (1)](https://github.com/user-attachments/assets/f4103db5-997c-4567-b42a-86000e083613)
 
-![Screenshot_20250120-201749](https://github.com/user-attachments/assets/ee35eff1-9659-4aa8-84ce-766bd71a8186)
+![WhatsApp Image 2025-05-17 at 22 36 01 (2)](https://github.com/user-attachments/assets/fb5026b9-1737-48f4-8aea-da97e34924da)
 
+![WhatsApp Image 2025-05-17 at 22 36 01 (3)](https://github.com/user-attachments/assets/bc5474f1-59cd-471c-8791-56e2acefad5d)
 
+![WhatsApp Image 2025-05-17 at 22 42 50](https://github.com/user-attachments/assets/9f310441-a9d3-4bea-82f6-3a74b8badccb)
 
-UPDATE TAMPILAN BARU
-
-![Screenshot_20250206-132037](https://github.com/user-attachments/assets/ca6e467b-ba72-41ce-80e8-8990e000441c)
-
-
-![Screenshot_20250206-132044](https://github.com/user-attachments/assets/a882411d-7cab-4105-b666-5779d71b78b6)
-
-
-![Screenshot_20250206-170328](https://github.com/user-attachments/assets/926ab3bf-3a8f-4d6c-9f7a-46c98555ebf4)
-
-
-![Screenshot_20250206-132451](https://github.com/user-attachments/assets/eae9732b-fca5-4322-8fdf-522f711bd11b)
-
-
-![Screenshot_20250206-132058](https://github.com/user-attachments/assets/944dac87-4181-472d-8e2c-c72d7d1d9c6c)
-
-
-![download-VERSI-80](https://github.com/user-attachments/assets/b3869981-c491-4db1-88a8-89e9e7889ce9)
-
-
-![image](https://github.com/user-attachments/assets/b79f3357-d0f7-4ed7-80b0-467666e199bf)
-
-
-![image](https://github.com/user-attachments/assets/f52baf03-5a25-4cff-bc66-273acab62b76)
-
-
-![image](https://github.com/user-attachments/assets/08bcc59b-276e-4c61-85f6-13d4952b0ef0)
-
-
-![image](https://github.com/user-attachments/assets/1c5df883-480f-4d55-ad0a-7e8373f41399)
-
-
-![image](https://github.com/user-attachments/assets/15273792-88cc-45d6-a4c2-a2a952e03585)
-
-
-
-![image](https://github.com/user-attachments/assets/4cd3a75c-1f70-409c-b7d4-c6c289cd285d)
-
-
-
-![image](https://github.com/user-attachments/assets/7c81e162-42a6-42a3-b0cb-33cbea481c37)
-
-
-
-![image](https://github.com/user-attachments/assets/2bc36af5-b310-4f4f-9b7a-be664c4351e3)
+![WhatsApp Image 2025-05-17 at 23 22 43](https://github.com/user-attachments/assets/d722bd81-9f8d-4524-9b78-00a639515dca)
 
 
   -----------------------------------------------------------------------------------
+
+CATATAN : 
 
  PROGRAM APLIKASI AI ROBOT SYSTEM V.80 INI HANYA DI PERUNTUKAN DI RS KAMI TIDAK DI PUBLIKASI.
  JARINGAN GITHUB INI DI BUAT UNTUK PENGHUBUNG APLIKASI AI ROBOT SYSTEM V.80 SEBAGAI API (Application Programming Interface).
