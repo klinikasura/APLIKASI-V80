@@ -125,6 +125,28 @@ UPDATE TAMPILAN BARU VERSI HANDPHONE / ANDROID / IPHONE :
 ![WhatsApp Image 2025-05-17 at 23 22 43](https://github.com/user-attachments/assets/d722bd81-9f8d-4524-9b78-00a639515dca)
 
 
+
+UPDATE TAMPILAN BARU VERSI 8.0 => 12 HANDPHONE / ANDROID / IPHONE :  
+
+![image](https://github.com/user-attachments/assets/05fcdb91-f8e0-41f4-8d9b-c2bf93fc4b49)
+
+![image](https://github.com/user-attachments/assets/cd2c38e2-6758-41d3-855e-963c8d5729c8)
+
+![image](https://github.com/user-attachments/assets/806b1e16-12d8-4c87-915e-75d78c026d0d)
+
+![image](https://github.com/user-attachments/assets/831ded4c-2e9e-40ea-bc29-bf84b2abe223)
+
+![image](https://github.com/user-attachments/assets/716c8151-fdf1-47cb-aef9-8e5f82157df2)
+
+![image](https://github.com/user-attachments/assets/e6af282e-bb7a-4fed-80b3-7280391cf43b)
+
+UPDATE TAMPILAN BARU VERSI 8.0 => 12 OS / LINUX / MAC :  
+
+![image](https://github.com/user-attachments/assets/a855f3e3-ff80-4346-ae71-9e3b1f38809d)
+
+![image](https://github.com/user-attachments/assets/7b834be2-dfd4-4aee-864d-1cf550a46bfd)
+
+
   -----------------------------------------------------------------------------------
 
 CATATAN : 
