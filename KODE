@@ -1,0 +1,76 @@
+
+
+
+
+<script src="script-getar.js"></script>
+<script src="http://10.10.20.253/dashboard/APPS-ROBOT/GITHUB/GETAR/script-getar.js"></script>
+
+
+
+
+<button type="submit"height="80" width="80" id="vib1" class="btn btn-lg btn-primary btn-block" >MASUK</button>
+
+    <pre id="log"></pre>
+
+    <a id="log"></a>
+
+
+
+
+
+
+
+
+
+CODING :
+
+<!doctype html>
+<html>
+  <head>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <button id="vib1">single</button>
+    <button id="vib2">repeat</button>
+    <button id="vib3">stop</button>
+    <pre id="log"></pre>
+  </body>
+</html>
+
+
+
+
+window.addEventListener("load", function (ev) {
+    "use strict";
+    var log = document.getElementById("log");
+    if (navigator.vibrate) {
+        log.textContent += "navigator.vibrate exists\n";
+    }
+    if (navigator.mozVibrate) {
+        log.textContent += "navigator.mozVibrate exists\n";
+    }
+    if (navigator.webkitVibrate) {
+        log.textContent += "navigator.webkitVibrate exists\n";
+    }
+    log.textContent += "finished\n";
+
+    
+    document.getElementById("vib1").addEventListener("click", function () {
+        navigator.vibrate(1500);
+    }, false);
+    document.getElementById("vib2").addEventListener("click", function () {
+        navigator.vibrate([1000, 100, 500, 100, 300, 100, 100]);
+    }, false);
+    document.getElementById("vib3").addEventListener("click", function () {
+        navigator.vibrate();
+    }, false);
+}, false);
+
+
+
+https://rawgit.com/bellbind/5ec3e4548ed2f6d11d8f/raw/index.html
+
+
+https://gist.github.com/bellbind/5ec3e4548ed2f6d11d8f
+
+
