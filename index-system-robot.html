@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi RS. Asura</title>
+ <link href="https://klinikasura.github.io/APLIKASI-V80/download-VERSI-80.jpeg" rel="icon" type="image/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <script src="https://klinikasura.github.io/APLIKASI-V80/script-getar.js"></script>
+<script type="text/javascript" src="chartjs/Chart.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<meta http-equiv="refresh" content="100;url=https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html"/>
+
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #4682B4;
+      color: #fff;
+    }
+    .search-bar {
+      display: flex;
+    }
+    .search-bar input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      width: 80%;
+    }
+    .search-bar button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      width: 20%;
+    }
+    .notification {
+      padding: 10px;
+    }
+    .notification button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .wallet {
+      background-color: #87CEEB;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .wallet .balance {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .wallet .currency {
+      font-size: 18px;
+    }
+    .quick-menu-top {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .quick-menu-item-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quick-menu-item-top button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .quick-menu-item-top p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .transactions {
+      padding: 20px;
+    }
+    .transaction {
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .transaction .date {
+      font-size: 14px;
+      color: #666;
+    }
+    .transaction .amount {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .quick-menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .quick-menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quick-menu-item button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .quick-menu-item p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #4682B4;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .menu button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      flex: 1;
+    }
+    .menu button:hover {
+      background-color: #5F9EA0;
+    }
+    .material-icons {
+      font-size: 24px;
+    }
+.menu a {
+  background-color: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #5F9EA0;
+}
+
+.menu button {
+  background-color: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.menu button:hover {
+  background-color: #5F9EA0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4682B4;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.1);
+  color: #ccc;
+}
+
+.menu-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.menu-item span {
+  font-size: 14px;
+}
+
+
+  </style>
+</head>
+        
+<audio autoplay>
+    <source src="https://klinikasura.github.io/APLIKASI-V80/aplikasi-audio.mp3" type="audio/mpeg">
+</audio>
+
+
+<body>
+
+
+
+
+
+
+  <div class="header">
+    <div class="search-bar">
+         <button><i class=""></i></button>
+    </div>
+<center><div id="idb32fcf3b124c9" a='{"t":"s","v":"1.2","lang":"id","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'><a href="https://cuacalab.id/widget/">HTML Weather widget for website by cuacalab.id</a></div>
+
+  <script async src="https://static1.cuacalab.id/widgetjs/?id=idb32fcf3b124c9"></script>
+
+    <div class="notification">
+
+
+
+    </div>
+  </div>
+  <div class="wallet">
+<h8><b><font color="black">
+
+<p>
+    <!-- Menampilkan Jam (Aktif) -->
+	<H5><div id="clock"></div>
+	<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+
+
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 24) {
+
+		        a_p = "(WIB)";
+		    } else {
+		        a_p = "(WIB)";
+		    }
+
+		    if (curr_hour == 0) {
+
+		        curr_hour = 24;
+		    }
+		    if (curr_hour > 24) {
+
+		        curr_hour = curr_hour - 24;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+
+
+
+		function checkTime(i) {
+		    if (i < 10) {
+
+
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->
+		</script>
+
+		<!-- Menampilkan Hari, Bulan dan Tahun -->
+		
+		<script type='text/javascript'>
+
+			<!--
+
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			//-->
+		</script>
+
+      
+      
+
+
+  </div>
+  <div class="quick-menu-top">
+    <div class="quick-menu-item-top">
+     <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-2.html"><img src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/ASKES.png" width="52" height="63" border="0"></a>
+      <p>ASKES</p>
+    </div>
+    <div class="quick-menu-item-top">
+     <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-3.html"> <img src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/wallet.png" width="52" height="63" border="0"></a>
+      <p>E-UANG</p>
+    </div>
+<div class="quick-menu-item-top">
+ <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-5.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="60" width="40" /></a>
+      <p>WIDGET</p>
+    </div>
+    <div class="quick-menu-item-top">
+      <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-4.html"><img src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/bullet-point.png" width="52" height="63" border="0"></a>
+      <p>LAINNYA</p>
+    </div>
+  </div>
+ 
+
+
+
+
+<div class="menu">
+
+  
+  <a href="http://10.10.20.251/dashboard/APPS-ROBOT/GITHUB/LOG/login.php" class="menu-item">
+    <i class="material-icons">login</i>
+    <span>MASUK</span>
+  </a>
+</div>
+ 
+     <a id="log"></a>
+    
+  </div>
+
+
+<p>   <p>&nbsp;</p>
+<p>   <p>&nbsp;</p>
+
+
+<a href="https://10.10.20.251/webapps/presensi/">
+<img src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/face-id.png" class="wabutton" alt="WhatsApp-Button" />
+</a>
+<style>
+.wabutton{
+width:50px;
+height:50px;
+position:fixed;
+bottom:120px;
+right:20px;
+z-index:100;
+}
+</style>
+
+
+</body>
+</html>
