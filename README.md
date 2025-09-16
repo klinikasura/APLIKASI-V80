@@ -22,8 +22,8 @@ LINK : https://klinikasura.github.io/APLIKASI-V80/ (VERSI FINAL)
 
   -------------------------------------------------------------------------------
 DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 :
-LINK UNTUK ANDROID : #
-LINK UNTUK IOS ATAU IPHONE : #
+LINK UNTUK ANDROID : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(30072025-0800)/ROBOT-NEW-30072025-0800.apk
+LINK UNTUK IOS ATAU IPHONE : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(30072025-0800)/IOS-ROBOT-NEW-30072025-0800.tar.gz
   -------------------------------------------------------------------------------
 DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 AUDIO
 LINK : https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AUDIO.apk
