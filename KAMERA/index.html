@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi RS. Asura</title>
+ <link href="https://klinikasura.github.io/APLIKASI-V80/download-VERSI-80.jpeg" rel="icon" type="image/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <script src="https://klinikasura.github.io/APLIKASI-V80/script-getar.js"></script>
+<script type="text/javascript" src="chartjs/Chart.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<meta http-equiv="refresh" content="1000;url=https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html"/>
+
+
+ <style>
+      
+        }
+        #hasil {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+
+
+
+
+ <style>
+                }
+        #video {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+            object-fit: cover; /* Agar gambar tetap proporsional */
+        }
+        button, select {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover, select:hover {
+            background-color: #0056b3;
+        }
+        #urlFoto {
+            margin-top: 10px;
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+
+<select id="pilihKamera">
+        <option value="user">Kamera Depan</option>
+        <option value="environment">Kamera Belakang</option>
+    </select>
+    <button id="mulaiKamera">Mulai Kamera</button>
+    <button id="ambilFoto" disabled>Ambil Foto</button>
+    <button id="downloadFoto" disabled>Simpan Foto</button>
+		<a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
+  <button>Refresh</button>
+</a>
+    <button id="dapatkanURL" disabled>URL Foto</button>
+    <video id="video" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <div id="hasil"></div>
+    <input type="text" id="urlFoto" readonly placeholder="URL foto akan muncul di sini">
+
+    <script>
+        let video = document.getElementById('video');
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let mulaiKameraBtn = document.getElementById('mulaiKamera');
+        let ambilFotoBtn = document.getElementById('ambilFoto');
+        let downloadFotoBtn = document.getElementById('downloadFoto');
+        let dapatkanURLBtn = document.getElementById('dapatkanURL');
+        let pilihKamera = document.getElementById('pilihKamera');
+        let urlFotoInput = document.getElementById('urlFoto');
+        let stream;
+        let fotoDataURL;
+
+        mulaiKameraBtn.addEventListener('click', async function() {
+            try {
+                let kameraDipilih = pilihKamera.value;
+                stream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: kameraDipilih }
+                });
+                video.srcObject = stream;
+                mulaiKameraBtn.disabled = true;
+                ambilFotoBtn.disabled = false;
+            } catch (error) {
+                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
+            }
+        });
+
+        ambilFotoBtn.addEventListener('click', function() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            fotoDataURL = canvas.toDataURL('image/png');
+            document.getElementById('hasil').innerHTML = '<img src="' + fotoDataURL + '" alt="Foto">';
+            ambilFotoBtn.disabled = true;
+            downloadFotoBtn.disabled = false;
+            dapatkanURLBtn.disabled = false;
+        });
+
+        downloadFotoBtn.addEventListener('click', function() {
+            if (fotoDataURL) {
+                let a = document.createElement('a');
+                a.href = fotoDataURL;
+                a.download = 'foto_APLIKASI_ROBOT_V80.png';
+                a.click();
+            } else {
+                alert('Ambil foto terlebih dahulu!');
+            }
+        });
+
+        dapatkanURLBtn.addEventListener('click', function() {
+            if (fotoDataURL) {
+                urlFotoInput.value = fotoDataURL;
+                alert('URL foto disalin ke kolom input. Anda bisa membagikannya.');
+            } else {
+                alert('Ambil foto terlebih dahulu!');
+            }
+        });
+    </script>
+
+<div class="container">
+                <div id="hasil">ROBOT GPS .... </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    let lat = position.coords.latitude;
+                    let lon = position.coords.longitude;
+                    let accuracy = position.coords.accuracy; // dalam meter
+                    document.getElementById('hasil').innerHTML = `
+                        <strong></strong><br>
+                        Latitude: ${lat}<br>
+                        Longitude: ${lon}<br>
+                        
+                    `;
+                    
+                    // Kirim data ke server PHP via fetch
+                    fetch('proses_lokasi.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ latitude: lat, longitude: lon, accuracy: accuracy })
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => console.error('Error:', error));
+                }, function(error) {
+                    let errorMsg;
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMsg = "GPS ROBOT Izin Akses Lokasi ditolak.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMsg = "GPS ROBOT Informasi Lokasi Tidak Tersedia.";
+                            break;
+                        case error.TIMEOUT:
+                            errorMsg = "Request mendapatkan lokasi timeout.";
+                            break;
+                        default:
+                            errorMsg = "Error tidak diketahui.";
+                    }
+                    document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
+                });
+            } else {
+                document.getElementById('hasil').innerHTML = "GPS ROBOT Tidak didukung Oleh Perangkat Ini.";
+            }
+        };
+    </script>
+
