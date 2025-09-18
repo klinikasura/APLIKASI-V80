@@ -240,6 +240,45 @@
     </style>
 
 
+
+
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        #video {
+            width: 320px;
+            height: 240px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+	
 	
 </head>
         
@@ -376,10 +415,10 @@
                     let errorMsg;
                     switch(error.code) {
                         case error.PERMISSION_DENIED:
-                            errorMsg = "Izin akses lokasi ditolak.";
+                            errorMsg = "GPS ROBOT Izin Akses Lokasi ditolak.";
                             break;
                         case error.POSITION_UNAVAILABLE:
-                            errorMsg = "Informasi lokasi tidak tersedia.";
+                            errorMsg = "GPS ROBOT Informasi Lokasi Tidak Tersedia.";
                             break;
                         case error.TIMEOUT:
                             errorMsg = "Request mendapatkan lokasi timeout.";
@@ -390,10 +429,64 @@
                     document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
                 });
             } else {
-                document.getElementById('hasil').innerHTML = "Geolocation tidak didukung oleh browser ini.";
+                document.getElementById('hasil').innerHTML = "GPS ROBOT Tidak didukung Oleh Perangkat Ini.";
             }
         };
     </script>
+
+
+
+
+
+
+<button id="mulaiKamera">Mulai Kamera</button>
+    <button id="ambilFoto" disabled>Ambil Foto</button>
+    <video id="video" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <div id="hasil"></div>
+
+    <script>
+        let video = document.getElementById('video');
+        let canvas = document.getElementById('canvas');
+        let ctx = canvas.getContext('2d');
+        let mulaiKameraBtn = document.getElementById('mulaiKamera');
+        let ambilFotoBtn = document.getElementById('ambilFoto');
+        let stream;
+
+        mulaiKameraBtn.addEventListener('click', async function() {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+                mulaiKameraBtn.disabled = true;
+                ambilFotoBtn.disabled = false;
+            } catch (error) {
+                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
+            }
+        });
+
+        ambilFotoBtn.addEventListener('click', function() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            let dataURL = canvas.toDataURL('image/png');
+            document.getElementById('hasil').innerHTML = '<img src="' + dataURL + '" alt="Foto">';
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
 
   </div>
   <div class="quick-menu-top">
