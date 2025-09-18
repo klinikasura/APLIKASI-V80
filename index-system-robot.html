@@ -225,6 +225,34 @@
 
 
   </style>
+
+
+
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #hasil {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+
+
+	
 </head>
         
 <audio autoplay>
@@ -327,7 +355,58 @@
 
       
       
+<div class="container">
+        <h2>Lokasi GPS Anda</h2>
+        <div id="hasil">Mendapatkan lokasi...</div>
+    </div>
 
+    <script>
+        window.onload = function() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    let lat = position.coords.latitude;
+                    let lon = position.coords.longitude;
+                    let accuracy = position.coords.accuracy; // dalam meter
+                    document.getElementById('hasil').innerHTML = `
+                        <strong>Lokasi:</strong><br>
+                        Latitude: ${lat}<br>
+                        Longitude: ${lon}<br>
+                        Akurasi: ${accuracy} meter
+                    `;
+                    
+                    // Kirim data ke server PHP via fetch
+                    fetch('proses_lokasi.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ latitude: lat, longitude: lon, accuracy: accuracy })
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => console.error('Error:', error));
+                }, function(error) {
+                    let errorMsg;
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMsg = "Izin akses lokasi ditolak.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMsg = "Informasi lokasi tidak tersedia.";
+                            break;
+                        case error.TIMEOUT:
+                            errorMsg = "Request mendapatkan lokasi timeout.";
+                            break;
+                        default:
+                            errorMsg = "Error tidak diketahui.";
+                    }
+                    document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
+                });
+            } else {
+                document.getElementById('hasil').innerHTML = "Geolocation tidak didukung oleh browser ini.";
+            }
+        };
+    </script>
 
   </div>
   <div class="quick-menu-top">
