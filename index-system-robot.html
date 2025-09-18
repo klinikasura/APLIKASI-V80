@@ -446,17 +446,17 @@
         <option value="user">Kamera Depan</option>
         <option value="environment">Kamera Belakang</option>
     </select>
-    <button id="mulaiKamera">Mulai Kamera</button>
+    <button id="mulaiKamera">Aktifkan Kamera</button>
     <button id="ambilFoto" disabled>Ambil Foto</button>
     <button id="downloadFoto" disabled>Simpan Foto</button>
-		<a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html">
-  <button>Refresh</button>
+		<a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
+  <button>Refresh Foto</button>
 </a>
     <button id="dapatkanURL" disabled>Copy URL Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
-    <input type="text" id="urlFoto" readonly placeholder="URL foto akan muncul di sini">
+    <input type="text" id="urlFoto" readonly placeholder="URL Foto akan muncul di sini">
 
     <script>
         let video = document.getElementById('video');
@@ -510,7 +510,7 @@
         dapatkanURLBtn.addEventListener('click', function() {
             if (fotoDataURL) {
                 urlFotoInput.value = fotoDataURL;
-                alert('URL foto disalin ke kolom input. Anda bisa membagikannya.');
+                alert('URL Foto Sudah disalin ke kolom input. Anda bisa membagikannya.');
             } else {
                 alert('Ambil foto terlebih dahulu!');
             }
