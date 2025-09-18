@@ -356,8 +356,7 @@
       
       
 <div class="container">
-        <h2>Lokasi GPS Anda</h2>
-        <div id="hasil">Mendapatkan lokasi...</div>
+                <div id="hasil">Mendapatkan lokasi...</div>
     </div>
 
     <script>
@@ -368,7 +367,7 @@
                     let lon = position.coords.longitude;
                     let accuracy = position.coords.accuracy; // dalam meter
                     document.getElementById('hasil').innerHTML = `
-                        <strong>Lokasi:</strong><br>
+                        <strong>GPS :</strong><br>
                         Latitude: ${lat}<br>
                         Longitude: ${lon}<br>
                         Akurasi: ${accuracy} meter
