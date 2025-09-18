@@ -442,7 +442,7 @@
     </select>
     <button id="mulaiKamera">Mulai Kamera</button>
     <button id="ambilFoto" disabled>Ambil Foto</button>
-    <button id="downloadFoto" disabled>Download Foto</button>
+    <button id="downloadFoto" disabled>Simpan Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
@@ -468,7 +468,7 @@
                 mulaiKameraBtn.disabled = true;
                 ambilFotoBtn.disabled = false;
             } catch (error) {
-                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
+                document.getElementById('hasil').innerText = 'Error Akses Kamera: ' + error.message;
             }
         });
 
@@ -486,10 +486,10 @@
             if (fotoDataURL) {
                 let a = document.createElement('a');
                 a.href = fotoDataURL;
-                a.download = 'foto.png';
+                a.download = 'foto_APLIKASI_ROBOT_V80.png';
                 a.click();
             } else {
-                alert('Ambil foto terlebih dahulu!');
+                alert('Ambil Foto Terlebih Dahulu!');
             }
         });
     </script>
