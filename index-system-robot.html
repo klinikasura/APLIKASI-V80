@@ -467,7 +467,14 @@
 </a>
 
 
+
+
+
     <button id="dapatkanURL" disabled>Copy URL Foto</button>
+
+<button id="bukaGaleri">Buka Galeri</button>
+
+
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
@@ -536,7 +543,32 @@
 
 
 
+    
+    <input type="file" id="inputGaleri" accept="image/*" style="display:none;">
+    <div id="hasil"></div>
+    <img id="previewFoto" src="" alt="Preview Foto">
 
+    <script>
+        let bukaGaleriBtn = document.getElementById('bukaGaleri');
+        let inputGaleri = document.getElementById('inputGaleri');
+        let previewFoto = document.getElementById('previewFoto');
+
+        bukaGaleriBtn.addEventListener('click', function() {
+            inputGaleri.click();
+        });
+
+        inputGaleri.addEventListener('change', function(event) {
+            let file = event.target.files[0];
+            if (file) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    previewFoto.src = e.target.result;
+                    document.getElementById('hasil').innerText = 'Foto dipilih: ' + file.name;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 
 
 
