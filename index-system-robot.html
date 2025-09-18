@@ -242,28 +242,35 @@
 
 
 
-<style>
-       
-        }
+ <style>
+                }
         #video {
             width: 80px;
             height: 80px;
             border: 1px solid #ccc;
             margin: 10px auto;
+            object-fit: cover; /* Agar gambar tetap proporsional */
         }
-        button {
+        button, select {
             padding: 10px 15px;
             background-color: #007bff;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            margin: 5px;
         }
-        button:hover {
+        button:hover, select:hover {
             background-color: #0056b3;
         }
+        #urlFoto {
+            margin-top: 10px;
+            padding: 8px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
     </style>
-
 
 
 
@@ -443,6 +450,9 @@
     <button id="mulaiKamera">Mulai Kamera</button>
     <button id="ambilFoto" disabled>Ambil Foto</button>
     <button id="downloadFoto" disabled>Simpan Foto</button>
+		<a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
+  <button>Refresh</button>
+</a>
     <button id="dapatkanURL" disabled>URL Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
