@@ -246,8 +246,8 @@
         #video {
             width: 20px;
             height: 20px;
-            border: 0px solid #ccc;
-            margin: 0px auto;
+            border: 1px solid #ccc;
+            margin: 1px auto;
             object-fit: cover; /* Agar gambar tetap proporsional */
         }
         button, select {
@@ -442,16 +442,16 @@
 
 
 <select id="pilihKamera">
-        <option value="user">Kamera Depan</option>
-        <option value="environment">Kamera Belakang</option>
+        <option value="user">Depan</option>
+        <option value="environment">Belakang</option>
     </select>
-    <button id="mulaiKamera">Mulai Kamera</button>
-    <button id="ambilFoto" disabled>Ambil Foto</button>
-    <button id="downloadFoto" disabled>Simpan Foto</button>
+    <button id="mulaiKamera">Mulai</button>
+    <button id="ambilFoto" disabled>Foto</button>
+    <button id="downloadFoto" disabled>Simpan</button>
 		<a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
-  <button>Refresh Foto</button>
+  <button>Refresh</button>
 </a>
-    <button id="dapatkanURL" disabled>Copy URL Foto</button>
+    <button id="dapatkanURL" disabled>Copy</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
@@ -460,7 +460,7 @@
     <script>
         let video = document.getElementById('video');
         let canvas = document.getElementById('canvas');
-        let ctx = canvas.getContext('2d');
+        let ctx = canvas.getContext('4d');
         let mulaiKameraBtn = document.getElementById('mulaiKamera');
         let ambilFotoBtn = document.getElementById('ambilFoto');
         let downloadFotoBtn = document.getElementById('downloadFoto');
@@ -480,7 +480,7 @@
                 mulaiKameraBtn.disabled = true;
                 ambilFotoBtn.disabled = false;
             } catch (error) {
-                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
+                document.getElementById('hasil').innerText = 'Error Akses Kamera: ' + error.message;
             }
         });
 
@@ -537,11 +537,11 @@
       <p></p>
     </div>
 <div class="quick-menu-item-top">
- <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-5.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="52" width="63" /></a>
+ <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-5.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="70" width="63" /></a>
       <p></p>
     </div>
 	  <div class="quick-menu-item-top">
- <a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/blob/main/KAMERA/KAMERA.png?raw=true"  height="52" width="63" /></a>
+ <a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/blob/main/KAMERA/KAMERA.png?raw=true"  height="80" width="63" /></a>
       
 <p></p>
     </div>
