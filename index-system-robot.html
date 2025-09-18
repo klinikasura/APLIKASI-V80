@@ -243,10 +243,7 @@
 
 
 <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
+       
         }
         #video {
             width: 320px;
@@ -439,8 +436,13 @@
 
 
 
-<button id="mulaiKamera">Mulai Kamera</button>
+<select id="pilihKamera">
+        <option value="user">Kamera Depan</option>
+        <option value="environment">Kamera Belakang</option>
+    </select>
+    <button id="mulaiKamera">Mulai Kamera</button>
     <button id="ambilFoto" disabled>Ambil Foto</button>
+    <button id="downloadFoto" disabled>Download Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
@@ -451,11 +453,17 @@
         let ctx = canvas.getContext('2d');
         let mulaiKameraBtn = document.getElementById('mulaiKamera');
         let ambilFotoBtn = document.getElementById('ambilFoto');
+        let downloadFotoBtn = document.getElementById('downloadFoto');
+        let pilihKamera = document.getElementById('pilihKamera');
         let stream;
+        let fotoDataURL;
 
         mulaiKameraBtn.addEventListener('click', async function() {
             try {
-                stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                let kameraDipilih = pilihKamera.value;
+                stream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: kameraDipilih }
+                });
                 video.srcObject = stream;
                 mulaiKameraBtn.disabled = true;
                 ambilFotoBtn.disabled = false;
@@ -468,11 +476,23 @@
             canvas.width = video.videoWidth;
             canvas.height = video.videoHeight;
             ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-            let dataURL = canvas.toDataURL('image/png');
-            document.getElementById('hasil').innerHTML = '<img src="' + dataURL + '" alt="Foto">';
+            fotoDataURL = canvas.toDataURL('image/png');
+            document.getElementById('hasil').innerHTML = '<img src="' + fotoDataURL + '" alt="Foto">';
+            ambilFotoBtn.disabled = true;
+            downloadFotoBtn.disabled = false;
+        });
+
+        downloadFotoBtn.addEventListener('click', function() {
+            if (fotoDataURL) {
+                let a = document.createElement('a');
+                a.href = fotoDataURL;
+                a.download = 'foto.png';
+                a.click();
+            } else {
+                alert('Ambil foto terlebih dahulu!');
+            }
         });
     </script>
-
 
 
 
