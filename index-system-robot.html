@@ -247,7 +247,7 @@
             width: 20px;
             height: 20px;
             border: 1px solid #ccc;
-            margin: 1px auto;
+            margin: 10px auto;
             object-fit: cover; /* Agar gambar tetap proporsional */
         }
         button, select {
@@ -441,26 +441,27 @@
 
 
 
+
 <select id="pilihKamera">
-        <option value="user">Depan</option>
-        <option value="environment">Belakang</option>
+        <option value="user">Kamera Depan</option>
+        <option value="environment">Kamera Belakang</option>
     </select>
-    <button id="mulaiKamera">Mulai</button>
-    <button id="ambilFoto" disabled>Foto</button>
-    <button id="downloadFoto" disabled>Simpan</button>
-		<a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
+    <button id="mulaiKamera">Mulai Kamera</button>
+    <button id="ambilFoto" disabled>Ambil Foto</button>
+    <button id="downloadFoto" disabled>Simpan Foto</button>
+		<a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html">
   <button>Refresh</button>
 </a>
-    <button id="dapatkanURL" disabled>Copy</button>
+    <button id="dapatkanURL" disabled>Copy URL Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
-    <input type="text" id="urlFoto" readonly placeholder="URL Foto">
+    <input type="text" id="urlFoto" readonly placeholder="URL foto akan muncul di sini">
 
     <script>
         let video = document.getElementById('video');
         let canvas = document.getElementById('canvas');
-        let ctx = canvas.getContext('4d');
+        let ctx = canvas.getContext('2d');
         let mulaiKameraBtn = document.getElementById('mulaiKamera');
         let ambilFotoBtn = document.getElementById('ambilFoto');
         let downloadFotoBtn = document.getElementById('downloadFoto');
@@ -480,7 +481,7 @@
                 mulaiKameraBtn.disabled = true;
                 ambilFotoBtn.disabled = false;
             } catch (error) {
-                document.getElementById('hasil').innerText = 'Error Akses Kamera: ' + error.message;
+                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
             }
         });
 
@@ -499,7 +500,7 @@
             if (fotoDataURL) {
                 let a = document.createElement('a');
                 a.href = fotoDataURL;
-                a.download = 'Foto_APLIKASI_ROBOT_V80.png';
+                a.download = 'foto_APLIKASI_ROBOT_V80.png';
                 a.click();
             } else {
                 alert('Ambil foto terlebih dahulu!');
