@@ -1,32 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Aplikasi RS. Asura</title>
-
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors-V80/feather/feather.css">
-  <link rel="stylesheet" href="vendors-V80/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="vendors-V80/css/vendor.bundle.base.css">
- <link rel="stylesheet" href="assets-V80/css/vendor.css">
-    <link rel="stylesheet" href="assets-V80/css/style.css">
-    <link rel="stylesheet" href="assets-V80/css/responsive.css">
-
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="vendors-V80/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="vendors-V80/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="js-V80/select.dataTables.min.css">
-  <!-- End plugin css for this page -->
-
-  <!-- inject:css -->
-  <link rel="stylesheet" href="css-V80/vertical-layout-light/style.css">
-	  <link href="ICON-V80/download.jpeg" rel="icon" type="image/png" /
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi RS. Asura</title>
+ <link href="https://klinikasura.github.io/APLIKASI-V80/download-VERSI-80.jpeg" rel="icon" type="image/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+ <script src="https://klinikasura.github.io/APLIKASI-V80/script-getar.js"></script>
+<script type="text/javascript" src="chartjs/Chart.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <meta http-equiv="refresh" content="1000;url=https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html"/>
+
+ <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #4682B4;
+      color: #fff;
+    }
+    .search-bar {
+      display: flex;
+    }
+    .search-bar input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      width: 80%;
+    }
+    .search-bar button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      width: 20%;
+    }
+    .notification {
+      padding: 10px;
+    }
+    .notification button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .wallet {
+      background-color: #87CEEB;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .wallet .balance {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .wallet .currency {
+      font-size: 18px;
+    }
+    .quick-menu-top {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .quick-menu-item-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quick-menu-item-top button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .quick-menu-item-top p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .transactions {
+      padding: 20px;
+    }
+    .transaction {
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .transaction .date {
+      font-size: 14px;
+      color: #666;
+    }
+    .transaction .amount {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .quick-menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .quick-menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quick-menu-item button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .quick-menu-item p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #4682B4;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .menu button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      flex: 1;
+    }
+    .menu button:hover {
+      background-color: #5F9EA0;
+    }
+    .material-icons {
+      font-size: 24px;
+    }
+.menu a {
+  background-color: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #5F9EA0;
+}
+
+.menu button {
+  background-color: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.menu button:hover {
+  background-color: #5F9EA0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4682B4;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.1);
+  color: #ccc;
+}
+
+.menu-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.menu-item span {
+  font-size: 14px;
+}
+
+
+  </style>
+
 
 
  <style>
@@ -74,42 +271,20 @@
     </style>
 
 
+
+
+
+
+
+
+
+
+
 	
-  <div class="container-scroller">
-    <!-- partial:partials/_navbar.html -->
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-     
- 
-        </button>
-        <ul class="navbar-nav mr-lg-2">
-          <li class="nav-item nav-search d-none d-lg-block">
-            <div class="input-group">
-              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
-                <span class="input-group-text" id="search">
-                  <i class=""></i>
-                </span>
-                   <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-          <span class="icon-menu"></span>
-        </button>
-      </div>
-    </nav>
-    <p>
-      <!-- partial -->
+	
+</head>
 
 
-
-      <!-- partial:partials/_settings-panel.html -->
-    </p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-    <p>
-      <!-- partial -->
-      <!-- partial -->
-      <center>
-      </p>
 
 
 <p><div class="container">
@@ -180,7 +355,7 @@
 		<a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html">
   <button>Refresh</button>
 </a>
-    <button id="dapatkanURL" disabled>URL Foto</button>
+    <button id="dapatkanURL" disabled>Copy URL Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
@@ -245,71 +420,22 @@
         });
     </script>
 
+<div class="menu">
+
+  
+  <a href="http://10.10.20.251/dashboard/APPS-ROBOT/GITHUB/LOG/login.php" class="menu-item" id="vib1">
+    <i class="material-icons">login</i>
+    <span>MASUK</span>
+  </a>
+</div>
+ 
+     <a id="log"></a>
+    
+  </div>
 
 
 
- </div>
-                 </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-          </div>
-          </div>
-
-
+</body>
+</html>
 	
  
-    <!-- Footer Area -->
-    
-            <h1><div class="footer-bottom text-center">
-                <ul>
-                    <li>
-                        <a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
-<img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/home-button.png"  height="60" width="40" /></a>
-                            <i class=""></i>
-                            <p>Beranda</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index-dashboard-2.html">
-<img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/ASKES.png"  height="60" width="40" /></a>
-                            <i class=""></i>
-                            <p>ASKES</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index-dashboard-3.html">
-<img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/wallet.png"  height="60" width="40" /></a>
-                            <i class=""></i>
-                            <p>E-UANG</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index-dashboard-5.html">
-<img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="60" width="40" /></a>
-                            <i class=""></i>
-                            <p>WIDGET</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index-dashboard-4.html">
-<img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/bullet-point.png"  height="60" width="40" /></a>
-                            <i class=""></i>
-                            <p>LAINNYA</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-</div>
-
-
-
-
-
-
-
-
-
