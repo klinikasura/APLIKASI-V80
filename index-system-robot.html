@@ -443,9 +443,11 @@
     <button id="mulaiKamera">Mulai Kamera</button>
     <button id="ambilFoto" disabled>Ambil Foto</button>
     <button id="downloadFoto" disabled>Simpan Foto</button>
+    <button id="dapatkanURL" disabled>URL Foto</button>
     <video id="video" autoplay></video>
     <canvas id="canvas" style="display:none;"></canvas>
     <div id="hasil"></div>
+    <input type="text" id="urlFoto" readonly placeholder="URL foto akan muncul di sini">
 
     <script>
         let video = document.getElementById('video');
@@ -454,7 +456,9 @@
         let mulaiKameraBtn = document.getElementById('mulaiKamera');
         let ambilFotoBtn = document.getElementById('ambilFoto');
         let downloadFotoBtn = document.getElementById('downloadFoto');
+        let dapatkanURLBtn = document.getElementById('dapatkanURL');
         let pilihKamera = document.getElementById('pilihKamera');
+        let urlFotoInput = document.getElementById('urlFoto');
         let stream;
         let fotoDataURL;
 
@@ -468,7 +472,7 @@
                 mulaiKameraBtn.disabled = true;
                 ambilFotoBtn.disabled = false;
             } catch (error) {
-                document.getElementById('hasil').innerText = 'ROBOT Akses Kamera .... : ' + error.message;
+                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
             }
         });
 
@@ -480,20 +484,29 @@
             document.getElementById('hasil').innerHTML = '<img src="' + fotoDataURL + '" alt="Foto">';
             ambilFotoBtn.disabled = true;
             downloadFotoBtn.disabled = false;
+            dapatkanURLBtn.disabled = false;
         });
 
         downloadFotoBtn.addEventListener('click', function() {
             if (fotoDataURL) {
                 let a = document.createElement('a');
                 a.href = fotoDataURL;
-                a.download = 'foto_APLIKASI_ROBOT_V80.png';
+                a.download = 'foto.png';
                 a.click();
             } else {
-                alert('Ambil Foto Terlebih Dahulu!');
+                alert('Ambil foto terlebih dahulu!');
+            }
+        });
+
+        dapatkanURLBtn.addEventListener('click', function() {
+            if (fotoDataURL) {
+                urlFotoInput.value = fotoDataURL;
+                alert('URL foto disalin ke kolom input. Anda bisa membagikannya.');
+            } else {
+                alert('Ambil foto terlebih dahulu!');
             }
         });
     </script>
-
 
 
 
