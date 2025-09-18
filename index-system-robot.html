@@ -544,33 +544,7 @@
 
 
     
-    <input type="file" id="inputGaleri" accept="image/*" style="display:none;">
-    <div id="hasil"></div>
-    <img id="previewFoto" src="" alt="Preview Foto">
-
-    <script>
-        let bukaGaleriBtn = document.getElementById('bukaGaleri');
-        let inputGaleri = document.getElementById('inputGaleri');
-        let previewFoto = document.getElementById('previewFoto');
-
-        bukaGaleriBtn.addEventListener('click', function() {
-            inputGaleri.click();
-        });
-
-        inputGaleri.addEventListener('change', function(event) {
-            let file = event.target.files[0];
-            if (file) {
-                let reader = new FileReader();
-                reader.onload = function(e) {
-                    previewFoto.src = e.target.result;
-                    document.getElementById('hasil').innerText = 'Foto dipilih: ' + file.name;
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-    </script>
-
-
+   
 
 		
 
@@ -588,14 +562,14 @@
 
     </div>
 <div class="quick-menu-item-top">
- <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-5.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="64" width="63" /></a>
+ <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-5.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="63" width="63" /></a>
       <p>WIDGET</p>
 
 
 
     </div>
 	  <div class="quick-menu-item-top">
- <a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/blob/main/KAMERA/KAMERA.png?raw=true"  height="64" width="63" /></a>
+ <a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/blob/main/KAMERA/KAMERA.png?raw=true"  height="63" width="63" /></a>
       
 <p>KAMERA</p>
 
