@@ -74,6 +74,97 @@
     </style>
 
 
+	
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+     
+ 
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class=""></i>
+                </span>
+                   <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <p>
+      <!-- partial -->
+
+
+
+      <!-- partial:partials/_settings-panel.html -->
+    </p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>
+      <!-- partial -->
+      <!-- partial -->
+      <center>
+      </p>
+
+
+<p><div class="container">
+                <div id="hasil">ROBOT GPS .... </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    let lat = position.coords.latitude;
+                    let lon = position.coords.longitude;
+                    let accuracy = position.coords.accuracy; // dalam meter
+                    document.getElementById('hasil').innerHTML = `
+                        <strong></strong><br>
+                        Latitude: ${lat}<br>
+                        Longitude: ${lon}<br>
+                        
+                    `;
+                    
+                    // Kirim data ke server PHP via fetch
+                    fetch('proses_lokasi.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ latitude: lat, longitude: lon, accuracy: accuracy })
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => console.error('Error:', error));
+                }, function(error) {
+                    let errorMsg;
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMsg = "GPS ROBOT Izin Akses Lokasi ditolak.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMsg = "GPS ROBOT Informasi Lokasi Tidak Tersedia.";
+                            break;
+                        case error.TIMEOUT:
+                            errorMsg = "Request mendapatkan lokasi timeout.";
+                            break;
+                        default:
+                            errorMsg = "Error tidak diketahui.";
+                    }
+                    document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
+                });
+            } else {
+                document.getElementById('hasil').innerHTML = "GPS ROBOT Tidak didukung Oleh Perangkat Ini.";
+            }
+        };
+    </script>
+</p>
+
 
 
 </head>
@@ -154,57 +245,18 @@
         });
     </script>
 
-<div class="container">
-                <div id="hasil">ROBOT GPS .... </div>
-    </div>
 
-    <script>
-        window.onload = function() {
-            if ("geolocation" in navigator) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    let lat = position.coords.latitude;
-                    let lon = position.coords.longitude;
-                    let accuracy = position.coords.accuracy; // dalam meter
-                    document.getElementById('hasil').innerHTML = `
-                        <strong></strong><br>
-                        Latitude: ${lat}<br>
-                        Longitude: ${lon}<br>
-                        
-                    `;
-                    
-                    // Kirim data ke server PHP via fetch
-                    fetch('proses_lokasi.php', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ latitude: lat, longitude: lon, accuracy: accuracy })
-                    })
-                    .then(response => response.text())
-                    .then(data => {
-                        console.log(data);
-                    })
-                    .catch(error => console.error('Error:', error));
-                }, function(error) {
-                    let errorMsg;
-                    switch(error.code) {
-                        case error.PERMISSION_DENIED:
-                            errorMsg = "GPS ROBOT Izin Akses Lokasi ditolak.";
-                            break;
-                        case error.POSITION_UNAVAILABLE:
-                            errorMsg = "GPS ROBOT Informasi Lokasi Tidak Tersedia.";
-                            break;
-                        case error.TIMEOUT:
-                            errorMsg = "Request mendapatkan lokasi timeout.";
-                            break;
-                        default:
-                            errorMsg = "Error tidak diketahui.";
-                    }
-                    document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
-                });
-            } else {
-                document.getElementById('hasil').innerHTML = "GPS ROBOT Tidak didukung Oleh Perangkat Ini.";
-            }
-        };
-    </script>
+
+
+ </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
 
 
 	
