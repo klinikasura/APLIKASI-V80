@@ -23,24 +23,34 @@ LINK : https://klinikasura.github.io/APLIKASI-V80/ (VERSI FINAL)
   -------------------------------------------------------------------------------
 DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 :
 LINK UNTUK ANDROID : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(30072025-0800)/ROBOT-NEW-30072025-0800.apk
+  -------------------------------------------------------------------------------
 LINK UNTUK IOS ATAU IPHONE : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(30072025-0800)/IOS-ROBOT-NEW-30072025-0800.tar.gz
   -------------------------------------------------------------------------------
+
+  
 DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 AUDIO
 LINK : https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/BUILDING/AUDIO.apk
   -------------------------------------------------------------------------------
-WIDGET AI ROBOT SYSTEM V80
+
+
+  
+WIDGET AI ROBOT SYSTEM V80 :
   -------------------------------------------------------------------------------
-CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI HOTSPOT)
-LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-HOTSPOT/login (VERSI FINAL)
+  
+1. CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI HOTSPOT)
+   LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-HOTSPOT/login (VERSI FINAL)
   -----------------------------------------------------------------------------
-CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI CHAT)
-LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-AI-CHAT (VERSI FINAL
+  
+2. CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI CHAT)
+   LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-AI-CHAT (VERSI FINAL
   ----------------------------------------------------------------------------
-CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI CUACA)
-LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-CUACA/ (VERSI FINAL
+  
+3. CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI CUACA)
+   LINK : https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-CUACA/ (VERSI FINAL
   -----------------------------------------------------------------------------
-CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI SLIDER)
-LINK : https://klinikasura.github.io/APLIKASI-V80/SLIDER/ (VERSI FINAL
+  
+4. CEK RIVIEW TAMPILAN APLIKASI APLIKASI AI ROBOT SYSTEM V.80 (AI SLIDER)
+   LINK : https://klinikasura.github.io/APLIKASI-V80/SLIDER/ (VERSI FINAL
   -------------------------------------------------------------------------------
 
 
@@ -53,7 +63,7 @@ LINK : https://klinikasura.github.io/APLIKASI-V80/SLIDER/ (VERSI FINAL
 - Pembaharuan di Aplikasi Komputer System Versi 8 PRO
 - Pembaharuan Integrasi SATU SEHAT KEMENKES & ASKES Nasional 
 - Pembaharuan Jaringan Internet Otomatis Smart
-RINCIAN :
+  RINCIAN :
 - CODING DAN PROGRAM LEVEL 8
 - APLIKASI MOBILE LEVEL 8
 - GITHUB API UPDATE LEVEL 8
@@ -62,18 +72,28 @@ RINCIAN :
 
   -----------------------------------------------------------------------------------
  UPDATE TAMPILAN VERSI DESKTOP / KOMPUTER :
-<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/dccd5842-a002-424d-a738-8ea9669a0fa7" />
+ 
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/a951e8fd-ce45-432d-abbb-02d294dea41a" />
+
   -----------------------------------------------------------------------------------
   
 UPDATE TAMPILAN BARU VERSI HANDPHONE / ANDROID / IPHONE : 
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/2cc1c451-cb5b-4d99-b199-c4dc02ab303a" />
+
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/d4abf971-2454-447f-bb2d-be9396a20990" />
+
+
   -----------------------------------------------------------------------------------
   
 UPDATE TAMPILAN BARU VERSI 8.0 => 12 OS / LINUX / MAC / ANDROID / IPHONE :  
-<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/0851c6f9-08bc-4c06-b067-d6ca61c53a3a" />
+
+<img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/9b200029-9e73-4885-9a98-1a1c26174f6b" />
+
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/bd8de1ae-c447-4220-90d7-439c0243a3bd" />
+
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/2264e8e3-2161-462d-afb3-289a84eb231b" />
+
 <img width="1024" height="768" alt="image" src="https://github.com/user-attachments/assets/877507ac-dc9c-4959-a607-f1151b5de112" />
+
   -----------------------------------------------------------------------------------
 
 CATATAN : 
@@ -92,14 +112,19 @@ VERSI 7 TAHUN 2024,
 VERSI 8 TAHUN 2025.
 
   -----------------------------------------------------------------------------------
-CREATE APPS: ASEP PUDIN NEW.
+  
+  CREATE APPS: ASEP PUDIN NEW.
 SUPPORT:
 IOS, OS, WINDOWS, LINUX, MAC, ANDROID, IPHONE, GOOGLE DAN XP
+
   -----------------------------------------------------------------------------------
+  
 PENYIMPANAN DATA :
 SQL, APACHE, AI, MDBL DAN INTEL AQ
+
   -----------------------------------------------------------------------------------
 SINYAL:
 SATELIT AQ-08
+
   -----------------------------------------------------------------------------------
 TERIMA KASIH.
