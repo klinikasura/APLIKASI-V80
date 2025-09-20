@@ -275,6 +275,24 @@
 
   <script async src="https://static1.cuacalab.id/widgetjs/?id=idb32fcf3b124c9"></script>
 
+<div id="ip-address">IP ROBOT Memuat...</div>
+
+    <script>
+        let ipAddressDiv = document.getElementById('ip-address');
+
+        async function getIp() {
+            try {
+                let response = await fetch('https://api.ipify.org?format=json');
+                let data = await response.json();
+                ipAddressDiv.innerText = 'IP : ' + data.ip;
+            } catch (error) {
+                ipAddressDiv.innerText = 'IP ROBOT ERROR : ' + error.message;
+            }
+        }
+
+        getIp();
+    </script>
+	
     <div class="notification">
 
 
