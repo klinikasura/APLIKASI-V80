@@ -241,37 +241,7 @@
 
 
 
- <style>
-                }
-        #video {
-            width: 20px;
-            height: 20px;
-            border: 1px solid #ccc;
-            margin: 10px auto;
-            object-fit: cover; /* Agar gambar tetap proporsional */
-        }
-        button, select {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 2px;
-            cursor: pointer;
-            margin: 4px;
-        }
-        button:hover, select:hover {
-            background-color: #0056b3;
-        }
-        #urlFoto {
-            margin-top: 10px;
-            padding: 8px;
-            width: 300px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-    </style>
-
-
+ 
 
 
 
@@ -441,108 +411,6 @@
 
 
 
-
-<select id="pilihKamera">
-        <option value="user">Kamera Depan</option>
-        <option value="environment">Kamera Belakang</option>
-    </select>
-    <button id="mulaiKamera">Aktifkan Kamera</button>
-    <button id="ambilFoto" disabled>Ambil Foto</button>
-    <button id="downloadFoto" disabled>Simpan Foto</button>
-		<a href="https://klinikasura.github.io/APLIKASI-V80/index-system-robot.html">
-  <button>Refresh Foto</button>
-</a>
-
-
-<a href="https://10.10.20.251/webapps/presensi/">
-  <button>Absensi</button>
-</a>
-
-
-
-
-
-<a href="https://klinikasura.github.io/APLIKASI-V80/AI-CARI/">
-  <button>Google</button>
-</a>
-
-
-
-
-
-    <button id="dapatkanURL" disabled>Copy URL Foto</button>
-
-
-
-
-    <video id="video" autoplay></video>
-    <canvas id="canvas" style="display:none;"></canvas>
-    <div id="hasil"></div>
-    <input type="text" id="urlFoto" readonly placeholder="URL Foto akan muncul di sini">
-
-    <script>
-        let video = document.getElementById('video');
-        let canvas = document.getElementById('canvas');
-        let ctx = canvas.getContext('2d');
-        let mulaiKameraBtn = document.getElementById('mulaiKamera');
-        let ambilFotoBtn = document.getElementById('ambilFoto');
-        let downloadFotoBtn = document.getElementById('downloadFoto');
-        let dapatkanURLBtn = document.getElementById('dapatkanURL');
-        let pilihKamera = document.getElementById('pilihKamera');
-        let urlFotoInput = document.getElementById('urlFoto');
-        let stream;
-        let fotoDataURL;
-
-        mulaiKameraBtn.addEventListener('click', async function() {
-            try {
-                let kameraDipilih = pilihKamera.value;
-                stream = await navigator.mediaDevices.getUserMedia({
-                    video: { facingMode: kameraDipilih }
-                });
-                video.srcObject = stream;
-                mulaiKameraBtn.disabled = true;
-                ambilFotoBtn.disabled = false;
-            } catch (error) {
-                document.getElementById('hasil').innerText = 'Error akses kamera: ' + error.message;
-            }
-        });
-
-        ambilFotoBtn.addEventListener('click', function() {
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
-            fotoDataURL = canvas.toDataURL('image/png');
-            document.getElementById('hasil').innerHTML = '<img src="' + fotoDataURL + '" alt="Foto">';
-            ambilFotoBtn.disabled = true;
-            downloadFotoBtn.disabled = false;
-            dapatkanURLBtn.disabled = false;
-        });
-
-        downloadFotoBtn.addEventListener('click', function() {
-            if (fotoDataURL) {
-                let a = document.createElement('a');
-                a.href = fotoDataURL;
-                a.download = 'foto_APLIKASI_ROBOT_V80.png';
-                a.click();
-            } else {
-                alert('Ambil foto terlebih dahulu!');
-            }
-        });
-
-        dapatkanURLBtn.addEventListener('click', function() {
-            if (fotoDataURL) {
-                urlFotoInput.value = fotoDataURL;
-                alert('URL Foto Sudah disalin ke kolom input. Anda bisa membagikannya.');
-            } else {
-                alert('Ambil foto terlebih dahulu!');
-            }
-        });
-    </script>
-
-
-
-
-
     
    
 
@@ -586,7 +454,7 @@
   </div>
  
 
-<iframe src="https://klinikasura.github.io/APLIKASI-V80/JAM2/index.html" alt="people" width="100%" height="450" ></iframe>
+<iframe src="https://klinikasura.github.io/APLIKASI-V80/JAM2/index.html" alt="people" width="100%" height="440" ></iframe>
 
 
 <div class="menu">
