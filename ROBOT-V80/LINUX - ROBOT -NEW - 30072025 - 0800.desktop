@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=8.0
+Type=Application
+Name=AI ROBOT SYSTEM V80
+Exec=/opt/google/chrome/google-chrome "--profile-directory=Profile 8" --ignore-profile-directory-if-not-exists https://klinikasura.github.io/APLIKASI-V80/
+Icon=https://github.com/klinikasura/APLIKASI-V80/blob/main/ROBOT-VERSI-80.gif?raw=true
+URL=https://klinikasura.github.io/APLIKASI-V80/
+Comment=Buka https://klinikasura.github.io/APLIKASI-V80/ di tab baru di Google Chrome.
+Name[id]=LINUX - ROBOT -NEW - 30072025 - 0800
