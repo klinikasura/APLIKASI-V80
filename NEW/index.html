@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Aplikasi RS. Asura</title>
+ <link href="https://klinikasura.github.io/APLIKASI-V80/download-VERSI-80.jpeg" rel="icon" type="image/png" />
+
+    <!-- Stylesheet File -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+<script type="text/javascript" src="chartjs/Chart.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #4682B4;
+      color: #fff;
+    }
+    .search-bar {
+      display: flex;
+    }
+    .search-bar input {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      width: 80%;
+    }
+    .search-bar button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      width: 20%;
+    }
+    .notification {
+      padding: 10px;
+    }
+    .notification button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .wallet {
+      background-color: #87CEEB;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    .wallet .balance {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .wallet .currency {
+      font-size: 18px;
+    }
+    .quick-menu-top {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+    .quick-menu-item-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quick-menu-item-top button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .quick-menu-item-top p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .transactions {
+      padding: 20px;
+    }
+    .transaction {
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .transaction .date {
+      font-size: 14px;
+      color: #666;
+    }
+    .transaction .amount {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .quick-menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .quick-menu-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .quick-menu-item button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+    }
+    .quick-menu-item p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    .menu {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #4682B4;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+    .menu button {
+      background-color: #4682B4;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      flex: 1;
+    }
+    .menu button:hover {
+      background-color: #5F9EA0;
+    }
+    .material-icons {
+      font-size: 24px;
+    }
+.menu a {
+  background-color: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex: 1;
+  text-decoration: none;
+  text-align: center;
+}
+
+.menu a:hover {
+  background-color: #5F9EA0;
+}
+
+.menu button {
+  background-color: #4682B4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.menu button:hover {
+  background-color: #5F9EA0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #4682B4;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.1);
+  color: #ccc;
+}
+
+.menu-item i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.menu-item span {
+  font-size: 14px;
+}
+
+
+  </style>
+
+
+
+ <style>
+      
+        }
+        #hasil {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+    </style>
+
+
+
+</head>
+
+<audio autoplay>
+    <source src="https://klinikasura.github.io/APLIKASI-V80/aplikasi-audio.mp3" type="audio/mpeg">
+</audio>
+
+
+
+<body>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- auto notification start -->
+    <div class="modal fade fade-modal-nitification" id="overlay">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="ba-bill-pay-inner">
+                    <div class="ba-single-bill-pay">
+                        <div class="thumb">
+                            <img src="https://github.com/klinikasura/APLIKASI-V80/blob/main/ROBOT-VERSI-80.gif?raw=true" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Versi Terbaru</h5>
+                            <p>8.0</p>
+                        </div>
+                    </div>
+                    <div class="amount-inner">
+                                              <a class="btn btn-blue" href="#">Tentang Robot V80</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- auto notification end -->
+
+    <!-- header start -->
+    <div class="header-area" style="background-image: url(UBXjMbQ.gif);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-3">
+                    <div class="menu-bar">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+
+<center <div id="idb32fcf3b124c9" a='{"t":"s","v":"1.2","lang":"id","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'><a href="https://cuacalab.id/widget/">HTML Weather widget for website by cuacalab.id</a></div>
+
+  <script async src="https://static1.cuacalab.id/widgetjs/?id=idb32fcf3b124c9"></script>
+
+<p style="color: blue;"><div id="ip-address">IP ROBOT Memuat...</div>
+
+    <script>
+        let ipAddressDiv = document.getElementById('ip-address');
+
+        async function getIp() {
+            try {
+                let response = await fetch('https://api.ipify.org?format=json');
+                let data = await response.json();
+                ipAddressDiv.innerText = 'IP : ' + data.ip;
+            } catch (error) {
+                ipAddressDiv.innerText = 'IP ROBOT ERROR : ' + error.message;
+            }
+        }
+
+        getIp();
+    </script>
+<p>
+
+                <div class="col-sm-4 col-4 text-center">
+
+
+
+
+
+
+                    <a href="#" class="logo">
+                      
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="col-sm-4 col-5 text-right">
+                    <ul class="header-right">
+
+
+
+
+
+
+
+
+
+                        <li>
+                            
+                        </li>
+
+
+
+
+
+                        <li>
+                            <a href="https://klinikasura.github.io/APLIKASI-V80/AI-ROBOT-SYSTEM-V80-AI-CHAT/"><img src="ai2.png" alt="img"width="80" height="80" border="0"></a>
+                    
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-user" href="#"><img src="https://github.com/klinikasura/APLIKASI-V80/blob/main/ROBOT-VERSI-80.gif?raw=true" alt="img"width="80" height="80" border="0"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<p>   <p>&nbsp;</p>
+<p>   <p>&nbsp;</p>
+
+
+    <!-- header end -->
+
+    <!-- navbar end -->
+    <div class="ba-navbar">
+        <div class="ba-navbar-user">
+            <div class="menu-close">
+                <i class="la la-times"></i>
+            </div>
+            <div class="thumb">
+                <img src="https://github.com/klinikasura/APLIKASI-V80/blob/main/ROBOT-VERSI-80.gif?raw=true" alt="user">
+            </div>
+            <div class="details">
+         
+            </div>
+        </div>
+       
+        
+        
+    </div>
+    <!-- navbar end -->
+
+    <!-- navbar end -->
+    <div class="add-balance-inner-wrap">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Transaksi E-Money Pegawai</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="index.html">
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label class="label" for="account1">From</label>
+                                        <select class="form-control custom-select" id="account1">
+                                            <option value="0">Tabungan (****)</option>
+                                            <option value="1">Deposit(****)</option>
+                                                                             </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <label class="label">Enter Nominal</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="input1">Rp.</span>
+                                        </div>
+                                        <input type="text" class="form-control form-control-lg" value="0">
+                                    </div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <a href="http://10.10.20.251/dashboard/APPS-ROBOT/GITHUB/E-MONEY-MASTER-NASABAH/admin/login.php" target="_blank"class="btn-c btn-primary btn-block btn-lg" data-dismiss="modal">Tambah Saldo</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+
+<div class="notification">
+
+
+
+    
+
+
+
+
+
+
+
+
+<p>   <p>&nbsp;</p>
+<p>   <p>&nbsp;</p>
+
+
+    <!-- blog-area start -->
+    <div class="blog-area pd-top-36 pb-2 mg-top-40" style="background-image: url(assets/img/bg/6.png);">
+        <div class="container">
+            <div class="section-title">
+                                    </div>
+            <div class="blog-slider owl-carousel">
+                <div class="item">
+                    <div class="single-blog">
+                        <div class="thumb">
+                           <iframe src="https://snapwidget.com/embed/1092490" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:400px; height:190px" title="Klinik Asura"></iframe>
+                        </div>
+                        <div class="details">
+                            <a href="blog-details.html">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="single-blog">
+                        <div class="thumb">
+                            <iframe src="https://snapwidget.com/embed/1092490" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:400px; height:190px" title="Klinik Asura"></iframe>
+                        </div>
+                        <div class="details">
+                            <a href="blog-details.html">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog-area End -->
+<p>
+ <center><h8>Selamat datang</h8>
+ <center><h8>Kecerdasan Buatan AI Robot System V80</h8>
+
+   
+
+    <!-- add balance start -->
+    <div class="add-balance-area pd-top-40">
+        <div class="container">
+            <div class="ba-add-balance-title ba-add-balance-btn">
+                <h5>E-Money Pegawai</h5>
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="ba-add-balance-inner mg-top-40">
+                <div class="row custom-gutters-20">
+                    <div class="col-6">
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- add balance End -->
+
+    
+    </div>
+  </div>
+<center>
+
+    <!-- Menampilkan Jam (Aktif) -->
+	<H4><div id="clock"></div>	
+	<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+
+
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 24) {
+
+		        a_p = "(WIB)";
+		    } else {
+		        a_p = "(WIB)";
+		    }
+
+		    if (curr_hour == 0) {
+
+		        curr_hour = 24;
+		    }
+		    if (curr_hour > 24) {
+
+		        curr_hour = curr_hour - 24;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+
+
+
+		function checkTime(i) {
+		    if (i < 10) {
+
+
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->
+		</script>
+
+		<!-- Menampilkan Hari, Bulan dan Tahun -->
+		
+		<script type='text/javascript'>
+
+			<!--
+
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			//-->
+		</script>
+
+      
+      
+<div class="container">
+                <div id="hasil">ROBOT GPS .... </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    let lat = position.coords.latitude;
+                    let lon = position.coords.longitude;
+                    let accuracy = position.coords.accuracy; // dalam meter
+                    document.getElementById('hasil').innerHTML = `
+                        <strong></strong><br>
+                        Latitude: ${lat}<br>
+                        Longitude: ${lon}<br>
+                        
+                    `;
+                    
+                    // Kirim data ke server PHP via fetch
+                    fetch('proses_lokasi.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ latitude: lat, longitude: lon, accuracy: accuracy })
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => console.error('Error:', error));
+                }, function(error) {
+                    let errorMsg;
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMsg = "GPS ROBOT Izin Akses Lokasi ditolak.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMsg = "GPS ROBOT Informasi Lokasi Tidak Tersedia.";
+                            break;
+                        case error.TIMEOUT:
+                            errorMsg = "Request mendapatkan lokasi timeout.";
+                            break;
+                        default:
+                            errorMsg = "Error tidak diketahui.";
+                    }
+                    document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
+                });
+            } else {
+                document.getElementById('hasil').innerHTML = "GPS ROBOT Tidak didukung Oleh Perangkat Ini.";
+            }
+        };
+    </script>
+
+
+    <!-- send-money start -->
+    <div class="send-money-area pd-top-36 pd-bottom-40 mg-top-40" style="background-image: url(bg.jpg);">
+        <div class="container">
+            <div class="section-title style-two">
+                <h3 class="title">Menu</h3>
+                         </div>
+        </div>
+        <div class="send-money-slider owl-carousel">
+            <div class="item">
+                <div class="single-send-money">
+                   <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-2.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/ASKES.png"  height="63" width="63" /></a>
+                    <p>Askes</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-send-money">
+                    <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-3.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/wallet.png"  height="63" width="63" /></a>
+                    <p>E-Uang </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-send-money">
+                     <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-5.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/heavy-rain.png"  height="63" width="63" /></a>
+                    <p>Widget</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="single-send-money">
+                    <a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/blob/main/KAMERA/KAMERA.png?raw=true"  height="63" width="63" /></a>
+                    <p>Kamera</p>
+                </div>
+            </div>
+<div class="item">
+                <div class="single-send-money">
+                     <a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-4.html"><img border="0" src="https://github.com/klinikasura/APLIKASI-V80/raw/refs/heads/main/docs-V80/bullet-point.png"  height="63" width="63" /></a>
+                    <p>Lainnya</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- send-money End -->
+
+    
+
+    <!-- Footer Area -->
+    <div class="footer-area">
+        <div class="footer-top text-center" style="background-image: url(#);">
+            <div class="container">
+       
+            </div>
+        </div>
+
+
+
+
+     <div class="menu">
+
+  
+  <a href="http://10.10.20.251/dashboard/APPS-ROBOT/GITHUB/index-dashboard2.php" class="menu-item" id="vib1">
+    <i class="material-icons"></i><img border="0" src="SCAN.png?raw=true"  height="63" width="63" />
+    <span>MASUK</span>
+  </a>
+</div>
+ 
+     <a id="log"></a>
+    
+  </div>
+
+
+<p>   <p>&nbsp;</p>
+<p>   <p>&nbsp;</p>
+
+
+
+
+<a href="https://klinikasura.github.io/AI-ROBOT-SYSTEM-V80-AI-CHAT/">
+<img src="https://klinikasura.github.io/APLIKASI-V80/AI.png" class="wabutton" alt="WhatsApp-Button" />
+</a>
+<style>
+.wabutton{
+width:80px;
+height:80px;
+position:fixed;
+bottom:80px;
+right:20px;
+z-index:100;
+}
+</style>
+
+
+
+
+
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- All Js File here -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
