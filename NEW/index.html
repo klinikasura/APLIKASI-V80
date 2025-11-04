@@ -227,6 +227,32 @@
   </style>
 
 
+	<style>
+        /* Style untuk popup */
+        .popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 9999; /* Pastikan popup di atas konten lain */
+        }
+        
+        .popup img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90%; /* Ukuran gambar pada mobile */
+            max-height: 90%; /* Ukuran gambar pada mobile */
+            width: auto;
+            height: auto;
+        }
+	</style>
+
+
 
  <style>
       
@@ -250,6 +276,23 @@
 
 
 <body>
+
+	<!-- Popup gambar -->
+    <div class="popup" id="popup">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNLr4HxtE1K8hz1PkWOz2tePOpobWoCnExndb1BHO5MSe6nzScHjPHK2RU&s=10" alt="Gambar">
+    </div>
+
+    <script>
+        // Tampilkan popup secara otomatis
+        window.onload = function() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Tutup popup ketika diklik
+        document.getElementById("popup").addEventListener("click", function() {
+            this.style.display = "none";
+        });
+	</script>
 
     <!-- preloader area start -->
     <div class="preloader" id="preloader">
@@ -747,6 +790,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
