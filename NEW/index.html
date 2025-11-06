@@ -230,9 +230,9 @@
 <style>
         .typing {
             font-family: monospace;
-            font-size: 24px;
+            font-size: 12px;
             border-right: 2px solid black;
-            animation: blink 0.7s infinite;
+            animation: blink 0.8s infinite;
         }
 
         @keyframes blink {
@@ -719,9 +719,9 @@ function removeClassonBody(){var element=document.body;element.className=element
     <!-- blog-area End -->
 
 
-	 <span class="typing" id="typing"></span>
+	<center><span class="typing" id="typing"></span></center> 
 
-    <script>
+   <center> <script>
         const text = "Selamat Datang, Kecerdasan Buatan AI Robot System V80";
         let index = 0;
 
@@ -729,12 +729,12 @@ function removeClassonBody(){var element=document.body;element.className=element
             if (index < text.length) {
                 document.getElementById("typing").innerHTML += text[index];
                 index++;
-                setTimeout(type, 100); 
+                setTimeout(type, 1000); 
             }
         }
 
         type();
-    </script>
+    </script></center> 
 
 
 
@@ -994,6 +994,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
