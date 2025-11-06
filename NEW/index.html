@@ -230,7 +230,7 @@
 <style>
         .typing {
             font-family: monospace;
-            font-size: 12px;
+            font-size: 22px;
             border-right: 2px solid black;
             animation: blink 0.8s infinite;
         }
@@ -729,7 +729,7 @@ function removeClassonBody(){var element=document.body;element.className=element
             if (index < text.length) {
                 document.getElementById("typing").innerHTML += text[index];
                 index++;
-                setTimeout(type, 1000); 
+                setTimeout(type, 400); 
             }
         }
 
@@ -994,6 +994,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
