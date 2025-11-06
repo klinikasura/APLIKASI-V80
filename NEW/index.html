@@ -226,6 +226,30 @@
 
   </style>
 
+	
+<style>
+        .typing {
+            font-family: monospace;
+            font-size: 24px;
+            border-right: 2px solid black;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                border-color: black;
+            }
+            50% {
+                border-color: transparent;
+            }
+            100% {
+                border-color: black;
+            }
+        }
+    </style>
+
+
+	
 
 	<style>
         /* Style untuk popup */
@@ -415,7 +439,7 @@
 
 
 <p>   <p>&nbsp;</p>
-<p>   <p>&nbsp;</p>
+
 
 
     <!-- header end -->
@@ -487,7 +511,7 @@
 
 
 <p>&nbsp;</p>
- <p>&nbsp;</p>
+
 
 
 
@@ -695,16 +719,22 @@ function removeClassonBody(){var element=document.body;element.className=element
     <!-- blog-area End -->
 
 
-	<div style="text-align: center;">
-<span style="font-size: x-large;">
-<marquee bgcolor="" style="color: blue;" direction="left" width="300">
-<b>&lt;&lt;</b><b> Selamat datang &gt;&gt;</b>
-</marquee>
-<marquee bgcolor="" style="color: green;" direction="right" width="300">
-<b>&lt;&lt; Kecerdasan Buatan AI Robot System V80 &gt;&gt;</b>
-</marquee></span>
+	 <span class="typing" id="typing"></span>
 
-</div>
+    <script>
+        const text = "Selamat Datang, Kecerdasan Buatan AI Robot System V80";
+        let index = 0;
+
+        function type() {
+            if (index < text.length) {
+                document.getElementById("typing").innerHTML += text[index];
+                index++;
+                setTimeout(type, 100); 
+            }
+        }
+
+        type();
+    </script>
 
 
 
@@ -964,6 +994,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
