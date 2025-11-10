@@ -376,28 +376,7 @@
         </div>
     </div>
 
-	<div class="loading-container">
-    <div class="loading-spinner"></div>
-    <div class="loading-text">APLIKASI ROBOT V80</div>
-    <div class="timer" id="timer"></div>
-  </div>
-  <script>
-    let timer = 8;
-    const timerElement = document.getElementById("timer");
-    const loadingContainer = document.querySelector(".loading-container");
-
-    function updateTimer() {
-      timerElement.innerHTML = timer;
-      timer--;
-      if (timer < 0) {
-        loadingContainer.style.display = "none";
-      } else {
-        setTimeout(updateTimer, 1000);
-      }
-    }
-
-    updateTimer();
-  </script>
+	
     <!-- preloader area end -->
 
     <!-- auto notification start -->
@@ -507,7 +486,28 @@
 
 
 
+<div class="loading-container">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">APLIKASI ROBOT V80</div>
+    <div class="timer" id="timer"></div>
+  </div>
+  <script>
+    let timer = 8;
+    const timerElement = document.getElementById("timer");
+    const loadingContainer = document.querySelector(".loading-container");
 
+    function updateTimer() {
+      timerElement.innerHTML = timer;
+      timer--;
+      if (timer < 0) {
+        loadingContainer.style.display = "none";
+      } else {
+        setTimeout(updateTimer, 1000);
+      }
+    }
+
+    updateTimer();
+  </script>
 
 <p>   <p>&nbsp;</p>
 
@@ -1065,6 +1065,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
