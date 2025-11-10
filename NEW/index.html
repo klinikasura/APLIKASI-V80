@@ -290,6 +290,54 @@
     </style>
 
 
+	
+<style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .loading-spinner {
+      border: 5px solid #ccc;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #666;
+    }
+    .timer {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+
+
+
 
 </head>
 
@@ -327,6 +375,29 @@
             </div>
         </div>
     </div>
+
+	<div class="loading-container">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">APLIKASI ROBOT V80</div>
+    <div class="timer" id="timer"></div>
+  </div>
+  <script>
+    let timer = 1;
+    const timerElement = document.getElementById("timer");
+    const loadingContainer = document.querySelector(".loading-container");
+
+    function updateTimer() {
+      timerElement.innerHTML = timer;
+      timer--;
+      if (timer < 0) {
+        loadingContainer.style.display = "none";
+      } else {
+        setTimeout(updateTimer, 1000);
+      }
+    }
+
+    updateTimer();
+  </script>
     <!-- preloader area end -->
 
     <!-- auto notification start -->
@@ -994,6 +1065,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
