@@ -484,7 +484,7 @@
     <div class="timer" id="timer"></div>
   </div>
   <script>
-    let timer = 8;
+    let timer = 2;
     const timerElement = document.getElementById("timer");
     const loadingContainer = document.querySelector(".loading-container");
 
@@ -494,7 +494,7 @@
       if (timer < 0) {
         loadingContainer.style.display = "none";
       } else {
-        setTimeout(updateTimer, 1000);
+        setTimeout(updateTimer, 100000);
       }
     }
 
@@ -1057,6 +1057,7 @@ z-index:100;
 </body>
 
 </html>
+
 
 
 
