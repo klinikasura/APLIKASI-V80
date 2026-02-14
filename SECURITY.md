@@ -1,5 +1,7 @@
 UPDATE OTOMATIS 
 
+UPDATE 2026 PENYEMPURNAAN CODING DAN PROGRAM AI ROBOT SYSTEM V80
+
 # APLIKASI-V80
 APLIKASI AI ROBOT SYSTEM V.80
 
@@ -22,9 +24,9 @@ LINK : https://klinikasura.github.io/APLIKASI-V80/ (VERSI FINAL)
 
   -------------------------------------------------------------------------------
 DOWNLOAD APLIKASI AI ROBOT SYSTEM V.80 :
-LINK UNTUK ANDROID : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(30072025-0800)/ROBOT-NEW-30072025-0800.apk
+LINK UNTUK ANDROID : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(14022026-0900)/app-release-14022026-0907.apk
   -------------------------------------------------------------------------------
-LINK UNTUK IOS ATAU IPHONE : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(30072025-0800)/IOS-ROBOT-NEW-30072025-0800.tar.gz
+LINK UNTUK IOS ATAU IPHONE : https://github.com/klinikasura/APLIKASI-V80/releases/download/8.0_NEW_(14022026-0900)/ios_source-14022026-0907.tar.gz
   -------------------------------------------------------------------------------
 
   
@@ -110,6 +112,7 @@ VERSI 5 TAHUN 2023,
 VERSI 6 TAHUN 2024,
 VERSI 7 TAHUN 2024,
 VERSI 8 TAHUN 2025.
+VERSI 8 TAHUN 2026 FIX.
 
   -----------------------------------------------------------------------------------
   
@@ -125,6 +128,8 @@ SQL, APACHE, AI, MDBL DAN INTEL AQ
   -----------------------------------------------------------------------------------
 SINYAL:
 SATELIT AQ-08
+
+PROGRAM CODING SPESIAL : QS
 
   -----------------------------------------------------------------------------------
 TERIMA KASIH.
