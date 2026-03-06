@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI ROBOT SYSTEM V80</title>
+
+<link href="http://10.10.20.250/ROBOT/ROBOTV80.png" rel="icon" type="image/png"/>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fb;
+}
+/* ICON MENU TANPA UBAH HTML */
+
+.menu a div{
+position:relative;
+padding-top:45px;
+font-weight:bold;
+}
+
+/* ICON UMUM */
+
+.menu a div::before{
+position:absolute;
+top:8px;
+left:50%;
+transform:translateX(-50%);
+font-size:26px;
+}
+
+/* ICON PER MENU */
+
+.menu a:nth-child(1) div::before{
+content:"📋";
+}
+
+.menu a:nth-child(2) div::before{
+content:"📷";
+}
+
+.menu a:nth-child(3) div::before{
+content:"🏠";
+}
+
+.menu a:nth-child(4) div::before{
+content:"💰";
+}
+
+.menu a:nth-child(5) div::before{
+content:"🌐";
+}
+
+.menu a:nth-child(6) div::before{
+content:"📡";
+}
+
+.menu a:nth-child(7) div::before{
+content:"🕒";
+}
+
+.menu a:nth-child(8) div::before{
+content:"🤖";
+}
+
+/* HOVER EFFECT */
+
+.menu a div:hover{
+background:#0c63d6;
+color:white;
+transform:scale(1.05);
+transition:0.3s;
+}
+
+/* SPLASH */
+
+.splash{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(#f7f9fc,#e9eef7);
+}
+
+.logo{
+font-size:45px;
+font-weight:bold;
+color:#0c4da2;
+}
+
+.logo span{
+color:#1bb1e7;
+}
+
+/* POPUP */
+
+.popup{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:#1f1f1f;
+color:white;
+padding:25px;
+border-radius:20px 20px 0 0;
+text-align:center;
+}
+
+.popup button{
+width:100%;
+padding:15px;
+margin-top:10px;
+border:none;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.allow{
+background:#1cc55d;
+color:white;
+}
+
+.deny{
+background:transparent;
+color:#1cc55d;
+border:2px solid #1cc55d;
+}
+
+/* MAIN APP */
+
+.app{
+display:none;
+padding:20px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.header h1{
+color:#0c4da2;
+}
+
+.banner{
+margin-top:20px;
+background:#e6f1ff;
+padding:20px;
+border-radius:12px;
+text-align:center;
+font-weight:bold;
+}
+
+/* MENU GRID */
+
+.menu{
+margin-top:25px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+text-align:center;
+}
+
+.menu div{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+font-size:14px;
+}
+
+/* SLIDER */
+
+.send-money-area{
+margin-top:40px;
+overflow:hidden;
+}
+
+.slider-container{
+overflow-x:auto;
+scroll-behavior:smooth;
+}
+
+.slider{
+display:flex;
+gap:20px;
+padding:10px;
+min-width:max-content;
+}
+
+.single-send-money{
+text-align:center;
+width:80px;
+font-size:13px;
+}
+
+.single-send-money img{
+width:63px;
+height:63px;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* LOGIN */
+
+.login{
+margin-top:40px;
+}
+
+.login button{
+width:100%;
+padding:18px;
+background:#0c63d6;
+color:white;
+font-size:18px;
+border:none;
+border-radius:30px;
+}
+
+.register{
+margin-top:15px;
+text-align:center;
+color:#444;
+}
+
+.register span{
+color:#0c63d6;
+font-weight:bold;
+cursor:pointer;
+}
+/* STYLE SEMUA TOMBOL */
+
+button{
+transition:0.3s;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+font-weight:bold;
+letter-spacing:1px;
+}
+
+/* HOVER EFFECT */
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 6px 18px rgba(0,0,0,0.3);
+}
+
+/* BUTTON MASUK */
+
+.login button{
+background:linear-gradient(45deg,#0c63d6,#1bb1e7);
+border:none;
+border-radius:30px;
+font-size:18px;
+padding:18px;
+cursor:pointer;
+}
+
+/* POPUP BUTTON */
+
+.popup button{
+font-weight:bold;
+border-radius:12px;
+}
+
+/* IZINKAN BUTTON */
+
+.allow{
+background:linear-gradient(45deg,#1cc55d,#0bbf7c);
+}
+
+/* JANGAN IZINKAN BUTTON */
+
+.deny{
+border:2px solid #1cc55d;
+color:#1cc55d;
+background:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- SPLASH SCREEN -->
+
+<div class="splash" id="splash">
+
+<div class="logo"><span>my</span>ROBOT-V80</div>
+
+<div class="popup">
+<p>Izinkan <b>myROBOT-V80</b> melakukan dan mengelola Jaringan ?</p>
+
+<button class="allow" onclick="openApp()">IZINKAN</button>
+<button class="deny">JANGAN IZINKAN</button>
+</div>
+
+</div>
+
+<!-- MAIN APP -->
+
+<div class="app" id="app">
+
+<div class="header">
+<h1><span style="color:#1bb1e7">my</span>ROBOT-V80</h1>
+<div>V.80</div>
+</div>
+
+
+
+<div class="banner">
+<center <div id="idb32fcf3b124c9" a='{"t":"s","v":"1.2","lang":"id","locs":[],"ssot":"c","sics":"ds","cbkg":"rgba(255,255,255,0)","cfnt":"#000000","slfs":"33","slis":"45","slgp":"14"}'><a href="https://cuacalab.id/widget/">HTML Weather widget for website by cuacalab.id</a></div>
+
+  <script async src="https://static1.cuacalab.id/widgetjs/?id=idb32fcf3b124c9"></script>
+</div>
+
+
+ <!-- Menampilkan Jam (Aktif) -->
+	<H4><div id="clock"></div>	
+	<script type="text/javascript">
+		<!--
+		function showTime() {
+		    var a_p = "";
+		    var today = new Date();
+
+
+		    var curr_hour = today.getHours();
+		    var curr_minute = today.getMinutes();
+		    var curr_second = today.getSeconds();
+		    if (curr_hour < 24) {
+
+		        a_p = "(WIB)";
+		    } else {
+		        a_p = "(WIB)";
+		    }
+
+		    if (curr_hour == 0) {
+
+		        curr_hour = 24;
+		    }
+		    if (curr_hour > 24) {
+
+		        curr_hour = curr_hour - 24;
+		    }
+		    curr_hour = checkTime(curr_hour);
+		    curr_minute = checkTime(curr_minute);
+
+		    curr_second = checkTime(curr_second);
+		 document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+		    }
+
+
+
+		function checkTime(i) {
+		    if (i < 10) {
+
+
+		        i = "0" + i;
+		    }
+		    return i;
+		}
+		setInterval(showTime, 500);
+		//-->
+		</script>
+
+		<!-- Menampilkan Hari, Bulan dan Tahun -->
+		
+		<script type='text/javascript'>
+
+			<!--
+
+			var months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+			var myDays = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum&#39;at', 'Sabtu'];
+
+			var date = new Date();
+			var day = date.getDate();
+			var month = date.getMonth();
+			var thisDay = date.getDay(),
+			    thisDay = myDays[thisDay];
+			var yy = date.getYear();
+			var year = (yy < 1000) ? yy + 1900 : yy;
+			document.write(thisDay + ', ' + day + ' ' + months[month] + ' ' + year);
+			//-->
+		</script>
+
+      
+      
+<div class="container">
+                <div id="hasil">ROBOT GPS .... </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            if ("geolocation" in navigator) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    let lat = position.coords.latitude;
+                    let lon = position.coords.longitude;
+                    let accuracy = position.coords.accuracy; // dalam meter
+                    document.getElementById('hasil').innerHTML = `
+                        <strong></strong><br>
+                        Latitude: ${lat}<br>
+                        Longitude: ${lon}<br>
+                        
+                    `;
+                    
+                    // Kirim data ke server PHP via fetch
+                    fetch('proses_lokasi.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ latitude: lat, longitude: lon, accuracy: accuracy })
+                    })
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log(data);
+                    })
+                    .catch(error => console.error('Error:', error));
+                }, function(error) {
+                    let errorMsg;
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMsg = "GPS ROBOT Izin Akses Lokasi ditolak.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMsg = "GPS ROBOT Informasi Lokasi Tidak Tersedia.";
+                            break;
+                        case error.TIMEOUT:
+                            errorMsg = "Request mendapatkan lokasi timeout.";
+                            break;
+                        default:
+                            errorMsg = "Error tidak diketahui.";
+                    }
+                    document.getElementById('hasil').innerHTML = `Error: ${errorMsg}`;
+                });
+            } else {
+                document.getElementById('hasil').innerHTML = "GPS ROBOT Tidak didukung Oleh Perangkat Ini.";
+            }
+        };
+    </script>
+
+<!-- MENU -->
+
+<div class="menu">
+
+<a href="https://klinikasura.github.io/APLIKASI-V80/index-dashboard-2.html">
+<div>Menu</div>
+</a>
+
+
+<a href="https://klinikasura.github.io/APLIKASI-V80/KAMERA/index.html">
+<div>Scan</div>
+</a>
+
+
+<a href="http://esppt.kaboki.go.id/">
+<div>PBB</div>
+</a>
+
+
+
+<a href="https://coretaxdjp.pajak.go.id/identityproviderportal/Account/Login">
+<div>Pajak</div>
+</a>
+
+
+<a href="https://my.jdn-info.com/login">
+<div>JDN</div>
+</a>
+
+
+<a href="http://10.10.20.1/">
+<div>Mikrotik</div>
+</a>
+
+
+<a href="https://10.10.20.250/webapps/presensi/">
+<div>Absensi</div>
+</a>
+
+
+<a href="https://chatgpt.com/">
+<div>AI</div>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- SLIDER MENU -->
+
+<div class="send-money-area">
+
+<div class="slider-container" id="sliderContainer">
+
+<div class="slider">
+
+<div class="single-send-money">
+<a href="https://dfo.kemkes.go.id/Profil">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>DFO</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://mutufasyankes.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>MUTU</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://registrasifasyankes.kemkes.go.id/dashboard">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>Registrasi</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://aspak.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>ASPAK</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://sisdmk.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>SI-SDMK</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://satusehat.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>SDMK</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://lms.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>LMS</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://skp.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>CEK SKP</p>
+</div>
+
+<div class="single-send-money">
+<a href="https://sisrute.kemkes.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>SISRUTE</p>
+</div>
+
+
+
+
+<div class="single-send-money">
+<a href="https://satusehat.kemkes.go.id/platform/login">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>SATU SEHAT</p>
+</div>
+
+
+<div class="single-send-money">
+<a href="https://pcarejkn.bpjs-kesehatan.go.id">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>PCARE</p>
+</div>
+
+
+
+<div class="single-send-money">
+<a href="https://webskrining.bpjs-kesehatan.go.id/skrining">
+<img src="https://kemkes.go.id/image/images/logo_kemkes_jadi.png">
+</a>
+<p>SKRINING</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+<!-- LOGIN -->
+
+<div class="login">
+<a href="http://10.10.20.250/dashboard/APPS-ROBOT/GITHUB/LOG/login.php">
+<button>MASUK</button>
+</a>
+</div>
+
+<div class="register">
+Lupa Kata Sandi ?<br>
+<a href="http://10.10.20.250/dashboard/APPS-ROBOT/GITHUB/HELPDESK/">
+<span>Reset Sandi</span>
+</div>
+
+</div>
+
+<script>
+
+/* SPLASH */
+
+function openApp(){
+document.getElementById("splash").style.display="none";
+document.getElementById("app").style.display="block";
+}
+
+/* AUTO SLIDER */
+
+const slider=document.getElementById("sliderContainer");
+
+let scrollAmount=0;
+
+setInterval(function(){
+
+scrollAmount+=120;
+
+if(scrollAmount>=slider.scrollWidth){
+scrollAmount=0;
+}
+
+slider.scrollTo({
+left:scrollAmount,
+behavior:"smooth"
+});
+
+},2000);
+
+</script>
+
+</body>
+</html>
