@@ -6,7 +6,7 @@
 
 <title>AI ROBOT SYSTEM V80</title>
 
-<link href="http://10.10.20.250/ROBOT/ROBOTV80.png" rel="icon" type="image/png"/>
+<link href="ROBOTV80.png" rel="icon" type="image/png"/>
 
 <style>
 
@@ -16,6 +16,35 @@ font-family:Arial, Helvetica, sans-serif;
 background:#f5f7fb;
 }
 /* ICON MENU TANPA UBAH HTML */
+
+/* LOGIN FLOATING TENGAH */
+.login{
+ position:fixed;
+ bottom:25px;
+ left:50%;
+ transform:translateX(-50%);
+ width:90%;
+ max-width:400px;
+ z-index:999;
+}
+
+.login button{
+ width:100%;
+ padding:20px;
+ background:linear-gradient(45deg,#0c63d6,#1bb1e7);
+ color:white;
+ font-size:20px;
+ border:none;
+ border-radius:40px;
+ cursor:pointer;
+ box-shadow:0 6px 20px rgba(0,0,0,0.3);
+ letter-spacing:2px;
+}
+
+/* HOVER */
+.login button:hover{
+ transform:scale(1.05);
+}
 
 .menu a div{
 position:relative;
@@ -52,7 +81,7 @@ content:"💰";
 }
 
 .menu a:nth-child(5) div::before{
-content:"🌐";
+content:"🖨️";
 }
 
 .menu a:nth-child(6) div::before{
@@ -60,7 +89,7 @@ content:"📡";
 }
 
 .menu a:nth-child(7) div::before{
-content:"🎧";
+content:"🕒";
 }
 
 .menu a:nth-child(8) div::before{
@@ -468,8 +497,8 @@ background:white;
 </a>
 
 
-<a href="https://my.jdn-info.com/login">
-<div>JDN</div>
+<a href="http://10.10.20.250:631/printers/">
+<div>Printer</div>
 </a>
 
 
@@ -478,8 +507,8 @@ background:white;
 </a>
 
 
-<a href="https://u.pcloud.link/publink/show?code=kZVKNd5ZTxLBSnaLbjpLvuuEh1wyXyFywQTy">
-<div>Audio</div>
+<a href="https://member.speedcash.co.id/">
+<div>Tagihan</div>
 </a>
 
 
@@ -618,19 +647,24 @@ background:white;
 
 </div>
 
+
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+   <p>&nbsp;</p>
+
+
+
+
 <!-- LOGIN -->
 
 <div class="login">
-<a href="http://10.10.20.250/dashboard/APPS-ROBOT/GITHUB/LOG/login.php">
+<a href="http://10.10.20.250/dashboard/APPS-ROBOT/GITHUB/index-dashboard2.php">
 <button>MASUK</button>
 </a>
 </div>
 
-<div class="register">
-Lupa Kata Sandi ?<br>
-<a href="http://10.10.20.250/dashboard/APPS-ROBOT/GITHUB/HELPDESK/">
-<span>Reset Sandi</span>
-</div>
+
 
 </div>
 
