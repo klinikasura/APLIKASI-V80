@@ -1,4 +1,4 @@
-# 🤖 APLIKASI AI ROBOT SYSTEM V80
+# myROBOT-V80
 
 **AI ROBOT SYSTEM V.80 -- Versi 8 (Final Release)**\
 Pengembangan dan penyempurnaan sistem AI Robot untuk integrasi aplikasi
