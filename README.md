@@ -1,6 +1,6 @@
 # myROBOT-V80
 
-**AI ROBOT SYSTEM V.80 -- Versi 8 (Final Release)**\
+**myROBOT-V80 ATAU AI ROBOT SYSTEM V.80 -- Versi 8 (Final Release)**\
 Pengembangan dan penyempurnaan sistem AI Robot untuk integrasi aplikasi
 rumah sakit.
 
