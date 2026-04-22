@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Data Registrasi Pasien</title>
-  <meta http-equiv="refresh" content="2;url=pasien2.php">
+  <meta http-equiv="refresh" content="2;url=pasien4.php">
   <style>
     table {border-collapse:collapse;width:100%}
     th,td {border:1px solid #ddd;padding:8px;text-align:left}
