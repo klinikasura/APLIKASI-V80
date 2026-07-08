@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myRobot-V80 Kalkulator Master Settings</title>
+    <!-- Mengambil font bergaya modern -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        }
+
+        .calculator {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+            width: 350px;
+        }
+
+        #display {
+            width: 100%;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            outline: none;
+            font-size: 32px;
+            color: #fff;
+            text-align: right;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            padding: 18px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(1px);
+        }
+
+        button.operator {
+            background: rgba(255, 152, 0, 0.2);
+            color: #ff9800;
+            border: 1px solid rgba(255, 152, 0, 0.3);
+        }
+
+        button.operator:hover {
+            background: #ff9800;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.5);
+        }
+
+        button.clear {
+            background: rgba(244, 67, 54, 0.2);
+            color: #f44336;
+            border: 1px solid rgba(244, 67, 54, 0.3);
+        }
+
+        button.clear:hover {
+            background: #f44336;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(244, 67, 54, 0.5);
+        }
+
+        button.equal {
+            background: linear-gradient(135deg, #00f2fe, #4facfe);
+            color: #fff;
+            grid-column: span 2;
+            border: none;
+            font-weight: 600;
+        }
+
+        button.equal:hover {
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator">
+    <!-- Input Layar Utama -->
+    <input type="text" id="display" readonly>
+    
+    <!-- Area Tombol -->
+    <div class="buttons">
+        <button class="clear" onclick="clearDisplay()">C</button>
+        <button onclick="appendValue('/')" class="operator">/</button>
+        <button onclick="appendValue('*')" class="operator">*</button>
+        <button onclick="deleteLast()" class="operator">DEL</button>
+        
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('-')" class="operator">-</button>
+        
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('+')" class="operator">+</button>
+        
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('.')">.</button>
+        
+        <button onclick="appendValue('0')" style="grid-column: span 2;">0</button>
+        <button class="equal" onclick="calculate()">=</button>
+    </div>
+</div>
+
+<script>
+    const display = document.getElementById('display');
+
+    // Menambah karakter ke layar
+    function appendValue(val) {
+        display.value += val;
+    }
+
+    // Menghapus seluruh isi layar
+    function clearDisplay() {
+        display.value = '';
+    }
+
+    // Menghapus satu karakter terakhir (Backspace)
+    function deleteLast() {
+        display.value = display.value.slice(0, -1);
+    }
+
+    // Menghitung hasil matematika otomatis
+    function calculate() {
+        try {
+            // eval() mengevaluasi string matematika langsung menjadi hasil angka
+            display.value = eval(display.value);
+        } catch (error) {
+            display.value = 'Error';
+        }
+    }
+</script>
+
+</body>
+  </html>
+          
